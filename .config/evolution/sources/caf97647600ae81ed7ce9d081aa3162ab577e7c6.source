@@ -1,0 +1,23 @@
+[Data Source]
+DisplayName=leandrogsrosa9@outlook.com
+Enabled=true
+Parent=f067269927b178375e16c3512ed12b738d315ca0
+
+[Authentication]
+Host=smtp-mail.outlook.com
+Method=XOAUTH2
+Port=587
+ProxyUid=system-proxy
+RememberPassword=true
+User=leandrogsrosa9@outlook.com
+CredentialName=
+IsExternal=false
+
+[Security]
+Method=starttls-on-standard-port
+
+[Mail Transport]
+BackendName=smtp
+
+[Smtp Backend]
+ReencodeData=false

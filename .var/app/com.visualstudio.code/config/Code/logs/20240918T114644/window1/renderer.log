@@ -1,0 +1,4 @@
+2024-09-18 11:46:50.005 [info] Started local extension host with pid 131.
+2024-09-18 11:46:50.483 [info] Started initializing default profile extensions in extensions installation folder. file:///home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions
+2024-09-18 11:46:52.279 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions
+2024-09-18 11:46:55.377 [info] [perf] Render performance baseline is 46ms

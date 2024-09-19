@@ -1,0 +1,208 @@
+1726708578611	FirefoxAccounts	TRACE	initializing new storage manager
+1726708578611	FirefoxAccounts	TRACE	starting fetch of json user data
+1726708578615	FirefoxAccounts	TRACE	finished fetch of json user data - took: 4
+1726708578615	FirefoxAccounts	DEBUG	reading secure storage with existing: []
+1726708578616	FirefoxAccounts	TRACE	starting fetch of user data from the login manager
+1726708578630	FirefoxAccounts	DEBUG	secure read fetched items: ["scopedKeys"]
+1726708578631	FirefoxAccounts	TRACE	initializing of new storage manager done
+1726708578644	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/attached_clients
+1726708578955	Sync.Status	INFO	Resetting Status.
+1726708578955	Sync.Status	DEBUG	Status.service: undefined => success.status_ok
+1726708578955	Sync.SyncScheduler	TRACE	Setting SyncScheduler policy values to defaults.
+1726708578956	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1726708578956	Sync.Service	INFO	Loading Weave 1.132.0
+1726708578957	Sync.Engine.Clients	DEBUG	Engine constructed
+1726708578957	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1726708578964	Sync.Engine.Addons	DEBUG	Engine constructed
+1726708579021	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/attached_clients 401
+1726708579021	Hawk	DEBUG	(Response) /account/attached_clients: code: 401 - Status text: 
+1726708579021	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -1021
+1726708579021	Hawk	DEBUG	Received 401 for /account/attached_clients: retrying
+1726708579033	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/attached_clients
+1726708579036	Sync.Engine.Addons	DEBUG	SyncEngine initialized: addons
+1726708579040	Sync.Engine.Passwords	DEBUG	Engine constructed
+1726708579049	Sync.Engine.Passwords	DEBUG	SyncEngine initialized: passwords
+1726708579052	Sync.Engine.Prefs	DEBUG	Engine constructed
+1726708579054	Sync.Engine.Prefs	DEBUG	SyncEngine initialized: prefs
+1726708579058	Sync.Engine.Bookmarks	DEBUG	Engine constructed
+1726708579070	Sync.Engine.Bookmarks	DEBUG	SyncEngine initialized: bookmarks
+1726708579074	Sync.Engine.Forms	DEBUG	Engine constructed
+1726708579079	Sync.Engine.Forms	DEBUG	SyncEngine initialized: forms
+1726708579083	Sync.Engine.History	DEBUG	Engine constructed
+1726708579106	Sync.Engine.History	DEBUG	SyncEngine initialized: history
+1726708579110	Sync.Engine.Tabs	DEBUG	Engine constructed
+1726708579112	Sync.Engine.Tabs	DEBUG	SyncEngine initialized: tabs
+1726708579122	Sync.Engine.Tabs	INFO	Got a bridged engine!
+1726708579124	Sync.Engine.CreditCards	DEBUG	Engine constructed
+1726708579129	Sync.Engine.CreditCards	DEBUG	SyncEngine initialized: creditcards
+1726708579132	Sync.Engine.Extension-Storage	DEBUG	Engine constructed
+1726708579134	Sync.Engine.Extension-Storage	DEBUG	SyncEngine initialized: extension-storage
+1726708579134	Sync.Service	INFO	Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0
+1726708579136	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1726708579136	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1726708579136	Sync.Engine.History.Tracker	INFO	Adding Places observer.
+1726708579144	FirefoxAccounts	TRACE	Command queue observer created
+1726708579145	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1726708579146	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Initialized
+1726708579147	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1726708579147	FirefoxAccounts	DEBUG	getOAuthToken enter
+1726708579147	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1726708579147	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1726708579147	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1726708579148	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1726708579152	Sync.Service	DEBUG	User-Agent: Firefox/130.0.1 (Linux x86_64) FxSync/1.132.0.20240913135723.desktop
+1726708579152	Sync.Service	INFO	Starting sync at 2024-09-18 22:16:19 in browser session _6z7qjVqODkm
+1726708579152	Sync.Service	DEBUG	In sync: should login.
+1726708579152	Sync.Service	INFO	User logged in successfully - verifying login.
+1726708579153	Sync.SyncAuthManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1726708579153	Sync.Status	DEBUG	Status.login: success.login => success.status_ok
+1726708579153	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1726708579153	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1726708579153	Sync.SyncAuthManager	INFO	Getting sync key
+1726708579153	FirefoxAccounts	DEBUG	getOAuthToken enter
+1726708579154	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1726708579154	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1726708579154	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1726708579154	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1726708579154	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1726708579154	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1726708579215	FirefoxAccounts	DEBUG	FxAccountsWebChannel registered: account_updates with origin https://accounts.firefox.com
+1726708579257	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/attached_clients 401
+1726708579257	Hawk	DEBUG	(Response) /account/attached_clients: code: 401 - Status text: 
+1726708579258	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -257
+1726708579258	FirefoxAccounts	ERROR	error GETing /account/attached_clients: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708579258	FirefoxAccounts	WARN	handling invalid token error: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708579258	FirefoxAccounts	INFO	checking account status...
+1726708579261	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/session/status
+1726708579285	FirefoxAccounts	INFO	fetching updated device list
+1726708579288	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/devices?filterIdleDevicesTimestamp=1724894179285
+1726708579505	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/session/status 401
+1726708579506	Hawk	DEBUG	(Response) /session/status: code: 401 - Status text: 
+1726708579506	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -506
+1726708579506	Hawk	DEBUG	Received 401 for /session/status: retrying
+1726708579507	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/session/status
+1726708579510	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/devices?filterIdleDevicesTimestamp=1724894179285 401
+1726708579511	Hawk	DEBUG	(Response) /account/devices?filterIdleDevicesTimestamp=1724894179285: code: 401 - Status text: 
+1726708579511	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -511
+1726708579511	Hawk	DEBUG	Received 401 for /account/devices?filterIdleDevicesTimestamp=1724894179285: retrying
+1726708579513	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/devices?filterIdleDevicesTimestamp=1724894179285
+1726708579539	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1726708579737	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/session/status 401
+1726708579737	Hawk	DEBUG	(Response) /session/status: code: 401 - Status text: 
+1726708579737	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -737
+1726708579737	FirefoxAccounts	ERROR	error GETing /session/status: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708579738	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/status?uid=faeb580718484dc287d168746318efc1
+1726708579740	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/devices?filterIdleDevicesTimestamp=1724894179285 401
+1726708579740	Hawk	DEBUG	(Response) /account/devices?filterIdleDevicesTimestamp=1724894179285: code: 401 - Status text: 
+1726708579741	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -741
+1726708579741	FirefoxAccounts	ERROR	error GETing /account/devices?filterIdleDevicesTimestamp=1724894179285: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708579741	FirefoxAccounts	WARN	handling invalid token error: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708579741	FirefoxAccounts	INFO	checking account status...
+1726708579742	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/session/status
+1726708579755	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 401
+1726708579755	Services.Common.TokenServerClient	DEBUG	Got token response: 401
+1726708579756	Services.Common.TokenServerClient	INFO	Server-reported error: {"location":"body","name":"","description":"Unauthorized"}
+1726708579756	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/oauth/destroy
+1726708579756	Services.Common.RESTRequest	DEBUG	POST Length: 969
+1726708579757	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1726708579758	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","device","oauthTokens","encryptedSendTabKeys","encryptedCloseTabKeys","profileCache"]
+1726708579758	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","device","oauthTokens","encryptedSendTabKeys","encryptedCloseTabKeys","profileCache"]
+1726708579758	Sync.SyncAuthManager	WARN	Token server returned 401, retrying token fetch with fresh credentials
+1726708579758	FirefoxAccounts	DEBUG	getOAuthToken enter
+1726708579759	FirefoxAccounts	TRACE	finished write of json user data - took: 1
+1726708579760	FirefoxAccounts	DEBUG	writing secure storage: ["scopedKeys"]
+1726708579760	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1726708579765	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1726708579766	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/oauth/token
+1726708579766	Services.Common.RESTRequest	DEBUG	POST Length: 127
+1726708579964	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/session/status 401
+1726708579964	Hawk	DEBUG	(Response) /session/status: code: 401 - Status text: 
+1726708579965	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -965
+1726708579965	Hawk	DEBUG	Received 401 for /session/status: retrying
+1726708579966	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/status?uid=faeb580718484dc287d168746318efc1 200
+1726708579966	Hawk	DEBUG	(Response) /account/status?uid=faeb580718484dc287d168746318efc1: code: 200 - Status text: 
+1726708579966	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -966
+1726708579966	FirefoxAccounts	INFO	account status: needs reauthentication
+1726708579966	FirefoxAccounts	DEBUG	_updateAccountData with items: ["authAt","sessionToken","oauthTokens","profileCache","encryptedSendTabKeys","encryptedCloseTabKeys","keyFetchToken","unwrapBKey","scopedKeys"]
+1726708579966	FirefoxAccounts	DEBUG	writing plain storage: ["email","uid","verified","device"]
+1726708579966	FirefoxAccounts	TRACE	starting write of json user data: ["email","uid","verified","device"]
+1726708579966	FirefoxAccounts	DEBUG	Notifying observers of fxaccounts:statechange
+1726708579967	Sync.SyncAuthManager	DEBUG	observed fxaccounts:statechange
+1726708579978	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/session/status
+1726708579989	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/oauth/destroy 200
+1726708579989	Hawk	DEBUG	(Response) /oauth/destroy: code: 200 - Status text: 
+1726708579989	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -989
+1726708579990	FirefoxAccounts	TRACE	finished write of json user data - took: 24
+1726708579990	FirefoxAccounts	DEBUG	writing secure storage: []
+1726708579990	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1726708579994	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1726708580013	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/oauth/token 401
+1726708580013	Hawk	DEBUG	(Response) /oauth/token: code: 401 - Status text: 
+1726708580013	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -1013
+1726708580013	Hawk	DEBUG	Received 401 for /oauth/token: retrying
+1726708580027	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/oauth/token
+1726708580027	Services.Common.RESTRequest	DEBUG	POST Length: 127
+1726708580222	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/session/status 401
+1726708580222	Hawk	DEBUG	(Response) /session/status: code: 401 - Status text: 
+1726708580222	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -222
+1726708580222	FirefoxAccounts	ERROR	error GETing /session/status: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708580223	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/status?uid=faeb580718484dc287d168746318efc1
+1726708580255	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/oauth/token 401
+1726708580255	Hawk	DEBUG	(Response) /oauth/token: code: 401 - Status text: 
+1726708580255	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -255
+1726708580256	FirefoxAccounts	ERROR	error POSTing /oauth/token: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708580256	FirefoxAccounts	WARN	handling invalid token error: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708580256	FirefoxAccounts	INFO	checking account status...
+1726708580256	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/status?uid=faeb580718484dc287d168746318efc1
+1726708580448	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/status?uid=faeb580718484dc287d168746318efc1 200
+1726708580449	Hawk	DEBUG	(Response) /account/status?uid=faeb580718484dc287d168746318efc1: code: 200 - Status text: 
+1726708580449	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -449
+1726708580449	FirefoxAccounts	INFO	account status: needs reauthentication
+1726708580449	FirefoxAccounts	DEBUG	_updateAccountData with items: ["authAt","sessionToken","oauthTokens","profileCache","encryptedSendTabKeys","encryptedCloseTabKeys","keyFetchToken","unwrapBKey","scopedKeys"]
+1726708580449	FirefoxAccounts	DEBUG	writing plain storage: ["email","uid","verified","device"]
+1726708580449	FirefoxAccounts	TRACE	starting write of json user data: ["email","uid","verified","device"]
+1726708580449	FirefoxAccounts	DEBUG	Notifying observers of fxaccounts:statechange
+1726708580449	Sync.SyncAuthManager	DEBUG	observed fxaccounts:statechange
+1726708580450	Sync.Browser	ERROR	Refreshing device list failed.: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708580454	FirefoxAccounts	TRACE	finished write of json user data - took: 5
+1726708580454	FirefoxAccounts	DEBUG	writing secure storage: []
+1726708580454	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1726708580458	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1726708580480	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/status?uid=faeb580718484dc287d168746318efc1 200
+1726708580480	Hawk	DEBUG	(Response) /account/status?uid=faeb580718484dc287d168746318efc1: code: 200 - Status text: 
+1726708580480	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -480
+1726708580480	FirefoxAccounts	INFO	account status: needs reauthentication
+1726708580481	FirefoxAccounts	DEBUG	_updateAccountData with items: ["authAt","sessionToken","oauthTokens","profileCache","encryptedSendTabKeys","encryptedCloseTabKeys","keyFetchToken","unwrapBKey","scopedKeys"]
+1726708580481	FirefoxAccounts	DEBUG	writing plain storage: ["email","uid","verified","device"]
+1726708580481	FirefoxAccounts	TRACE	starting write of json user data: ["email","uid","verified","device"]
+1726708580481	FirefoxAccounts	DEBUG	Notifying observers of fxaccounts:statechange
+1726708580481	Sync.SyncAuthManager	DEBUG	observed fxaccounts:statechange
+1726708580481	FirefoxAccounts	ERROR	FxA rejecting with error AUTH_ERROR, details: {"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}
+1726708580481	Sync.SyncAuthManager	ERROR	Authentication error in _fetchTokenForUser: {"details":{"details":{"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}},"source":"fxaccounts"}
+1726708580481	Sync.Status	DEBUG	Status.login: success.status_ok => error.login.reason.account
+1726708580482	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1726708580482	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1726708580482	Sync.SyncAuthManager	INFO	Failed to fetch the cluster URL: {"details":{"details":{"code":401,"errno":110,"error":"Unauthorized","message":"The authentication token could not be found","info":"https://mozilla.github.io/ecosystem-platform/api#section/Response-format"}},"source":"fxaccounts"}
+1726708580482	Sync.SyncAuthManager	DEBUG	Cluster value = null
+1726708580482	Sync.Status	DEBUG	Status.sync: success.sync => error.sync.reason.no_node_found
+1726708580482	Sync.Status	DEBUG	Status.service: error.login.failed => error.sync.failed
+1726708580484	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1726708580485	Sync.Status	INFO	Resetting Status.
+1726708580485	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1726708580485	FirefoxAccounts	INFO	Generating and persisting encrypted key (false, true)
+1726708580486	FirefoxAccounts	INFO	Can't get keys; no key material or tokens available
+1726708580486	FirefoxAccounts	INFO	Can't fetch keys, so unable to determine command keys
+1726708580486	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1726708580486	FirefoxAccounts	INFO	Can't get keys; no key material or tokens available
+1726708580486	Sync.SyncAuthManager	INFO	Unable to fetch keys (master-password locked?), so aborting token fetch
+1726708580487	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1726708580487	Sync.SyncAuthManager	INFO	Failed to fetch the cluster URL: Error: Can't fetch a token as we can't get keys(resource://services-sync/sync_auth.sys.mjs:384:13) JS Stack trace: _fetchTokenForUser@sync_auth.sys.mjs:384:13
+1726708580487	FirefoxAccounts	INFO	Generating and persisting encrypted key (false, true)
+1726708580487	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Can't fetch a token as we can't get keys(resource://services-sync/sync_auth.sys.mjs:384:13) JS Stack trace: _fetchTokenForUser@sync_auth.sys.mjs:384:13
+1726708580488	Sync.SyncScheduler	DEBUG	Client count: 0 -> 1
+1726708580488	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1726708580490	FirefoxAccounts	INFO	Can't get keys; no key material or tokens available
+1726708580491	Sync.Service	DEBUG	Exception calling anonymous function: Error: Can't fetch a token as we can't get keys(resource://services-sync/sync_auth.sys.mjs:384:13) JS Stack trace: _fetchTokenForUser@sync_auth.sys.mjs:384:13
+1726708580491	FirefoxAccounts	INFO	Can't fetch keys, so unable to determine command keys
+1726708580491	FirefoxAccounts	INFO	Generating and persisting encrypted key (false, true)
+1726708580492	FirefoxAccounts	INFO	Can't get keys; no key material or tokens available

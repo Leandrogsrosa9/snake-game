@@ -1,0 +1,31 @@
+[Data Source]
+DisplayName=leandrogsrosa9@outlook.com
+Enabled=true
+Parent=
+
+[Authentication]
+Host=
+Method=none
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=
+CredentialName=
+IsExternal=true
+
+[Collection]
+BackendName=outlook
+CalendarEnabled=true
+ContactsEnabled=true
+Identity=759ffebc1a6cf013
+MailEnabled=true
+AllowSourcesRename=false
+CalendarUrl=
+ContactsUrl=
+
+[GNOME Online Accounts]
+AccountId=account_1726540156_1
+CalendarUrl=
+ContactsUrl=
+Name=
+Address=leandrogsrosa9@outlook.com

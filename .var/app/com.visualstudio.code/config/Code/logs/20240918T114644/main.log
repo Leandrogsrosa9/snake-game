@@ -1,0 +1,6 @@
+2024-09-18 11:46:45.257 [info] update#setState idle
+2024-09-18 11:47:15.262 [info] update#setState checking for updates
+2024-09-18 11:47:15.587 [info] update#setState idle
+2024-09-18 11:51:17.816 [error] Blocked vscode-file request vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.worker.js
+2024-09-18 11:51:17.852 [error] [UtilityProcessWorker]: terminated unexpectedly with code 18446744071761836000, signal: unknown
+2024-09-18 11:51:18.050 [info] Extension host with pid 131 exited with code: 0, signal: unknown.

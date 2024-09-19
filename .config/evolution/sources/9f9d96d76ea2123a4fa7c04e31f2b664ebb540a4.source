@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=leandrogsrosa9@outlook.com
+Enabled=true
+Parent=f067269927b178375e16c3512ed12b738d315ca0
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=caf97647600ae81ed7ce9d081aa3162ab577e7c6
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=leandrogsrosa9@outlook.com
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none

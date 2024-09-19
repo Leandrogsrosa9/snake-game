@@ -1,0 +1,53 @@
+2024-09-18 22:35:05.544 [info] O experimento 'pythonRecommendTensorboardExt' está ativo
+2024-09-18 22:35:05.545 [info] O experimento 'pythonTerminalEnvVarActivation' está ativo
+2024-09-18 22:35:05.545 [info] O experimento 'pythonTestAdapter' está ativo
+2024-09-18 22:35:05.770 [info] Starting Environment refresh
+2024-09-18 22:35:05.770 [info] Searching for interpreters in posix paths locator
+2024-09-18 22:35:05.791 [info] Searching for pyenv environments
+2024-09-18 22:35:05.791 [info] Searching for conda environments
+2024-09-18 22:35:05.792 [info] Searching for global virtual environments
+2024-09-18 22:35:05.792 [info] Searching for custom virtual environments
+2024-09-18 22:35:06.859 [info] pyenv is not installed
+2024-09-18 22:35:06.859 [info] Finished searching for pyenv environments: 1087 milliseconds
+2024-09-18 22:35:06.862 [info] Finished searching for custom virtual envs: 1085 milliseconds
+2024-09-18 22:35:06.875 [info] > conda info --json
+2024-09-18 22:35:07.097 [info] Finished searching for global virtual envs: 1321 milliseconds
+2024-09-18 22:35:07.171 [info] Found: /bin/python --> /usr/bin/python3.11
+2024-09-18 22:35:07.207 [info] Found: /bin/python3 --> /bin/python3.11
+2024-09-18 22:35:07.217 [info] Found: /bin/python3.11 --> /bin/python3.11
+2024-09-18 22:35:07.302 [info] Found: /sbin/python --> /usr/bin/python3.11
+2024-09-18 22:35:07.303 [info] Found: /sbin/python3 --> /sbin/python3.11
+2024-09-18 22:35:07.303 [info] Found: /sbin/python3.11 --> /sbin/python3.11
+2024-09-18 22:35:07.308 [info] Found: /usr/bin/python --> /usr/bin/python3.11
+2024-09-18 22:35:07.309 [info] Found: /usr/bin/python3 --> /usr/bin/python3.11
+2024-09-18 22:35:07.309 [info] Found: /usr/bin/python3.11 --> /usr/bin/python3.11
+2024-09-18 22:35:07.321 [info] Found: /usr/sbin/python --> /usr/bin/python3.11
+2024-09-18 22:35:07.322 [info] Found: /usr/sbin/python3 --> /usr/sbin/python3.11
+2024-09-18 22:35:07.322 [info] Found: /usr/sbin/python3.11 --> /usr/sbin/python3.11
+2024-09-18 22:35:07.341 [info] > /bin/python -I ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-09-18 22:35:07.355 [info] > /bin/python3 -I ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-09-18 22:35:07.375 [info] Finished searching for interpreters in posix paths locator: 1615 milliseconds
+2024-09-18 22:35:07.382 [info] Environments refresh paths discovered (event): 1625 milliseconds
+2024-09-18 22:35:07.382 [info] Environments refresh paths discovered: 1625 milliseconds
+2024-09-18 22:35:07.465 [info] > /sbin/python3 -I ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-09-18 22:35:07.474 [info] > /usr/sbin/python3 -I ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-09-18 22:35:07.547 [info] Environments refresh finished (event): 1790 milliseconds
+2024-09-18 22:35:07.560 [info] Environment refresh took 1806 milliseconds
+2024-09-18 22:35:07.568 [info] > pixi --version
+2024-09-18 22:35:07.571 [warning] could not find a pixi interpreter for the interpreter at /bin/python
+2024-09-18 22:35:07.597 [info] Caminho do interpretador Python: /bin/python
+2024-09-18 22:35:07.603 [warning] Shell integration may not be active, environment activated may be overridden by the shell.
+2024-09-18 22:35:07.615 [warning] could not find a pixi interpreter for the interpreter at /bin/python
+2024-09-18 22:35:07.616 [warning] could not find a pixi interpreter for the interpreter at /bin/python
+2024-09-18 22:35:07.642 [info] > /usr/sbin/python3.11 -I ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-09-18 22:35:07.648 [info] > /sbin/python3.11 -I ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-09-18 22:35:07.717 [info] > /sbin/python -I ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-09-18 22:35:07.730 [info] > /usr/sbin/python -I ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-09-18 22:35:07.792 [info] > /usr/bin/python -I ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ~/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-09-18 22:35:09.437 [info] Iniciando servidor de idiomas Pylance.
+2024-09-18 22:35:11.747 [error] Unable to identify shell /bin/sh  for OS  Linux
+2024-09-18 22:36:51.022 [info] Send text to terminal:  /usr/bin/env /bin/python /home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.debugpy-2024.10.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 39067 -- /home/leandrogsrosa/Documentos/PROJETOS\ TESTES/Snake.py 
+2024-09-18 22:52:31.970 [info] CreateEnv Trigger - Workspace not found for /home/leandrogsrosa/Documentos/PROJETOS TESTES/Snake_game.py
+2024-09-18 22:52:31.979 [error] Unable to identify shell /bin/sh  for OS  Linux
+2024-09-18 22:52:32.081 [info] Send text to terminal: /bin/python "/home/leandrogsrosa/Documentos/PROJETOS TESTES/Snake_game.py"
+2024-09-18 22:53:29.069 [info] Send text to terminal: /bin/python "/home/leandrogsrosa/Documentos/PROJETOS TESTES/Snake_game.py"

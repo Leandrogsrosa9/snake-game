@@ -1,0 +1,52 @@
+2024-09-18 22:27:25.423 [info] Getting Manifest... tushortz.pygame-snippets
+2024-09-18 22:27:25.450 [info] Installing extension: tushortz.pygame-snippets {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","path":"/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"}}
+2024-09-18 22:27:27.991 [info] Extension signature verification result for tushortz.pygame-snippets: Success. Executed: true. Duration: 1499ms.
+2024-09-18 22:27:28.076 [info] Extracted extension to file:///home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/tushortz.pygame-snippets-0.0.1: tushortz.pygame-snippets
+2024-09-18 22:27:28.085 [info] Renamed to /home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/tushortz.pygame-snippets-0.0.1
+2024-09-18 22:27:28.115 [info] Extension installed successfully: tushortz.pygame-snippets vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json
+2024-09-18 22:27:28.191 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp'
+    at o.create (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19406)
+    at u (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19517)
+    at $.hb (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36674)
+    at $.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:29001)
+    at async c.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14931)
+    at async W.ub (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:120356)
+2024-09-18 22:34:43.070 [info] Getting Manifest... ms-python.python
+2024-09-18 22:34:43.082 [info] Installing extension: ms-python.python {"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","path":"/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"}}
+2024-09-18 22:34:43.966 [info] Getting Manifest... ms-python.vscode-pylance
+2024-09-18 22:34:44.229 [info] Getting Manifest... ms-python.debugpy
+2024-09-18 22:34:44.558 [info] Installing extension: ms-python.vscode-pylance {"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","path":"/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-09-18 22:34:44.558 [info] Installing extension: ms-python.debugpy {"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","path":"/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-09-18 22:34:49.804 [info] Extension signature verification result for ms-python.debugpy: Success. Executed: true. Duration: 2032ms.
+2024-09-18 22:34:51.243 [info] Extracted extension to file:///home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.debugpy-2024.10.0-linux-x64: ms-python.debugpy
+2024-09-18 22:34:51.291 [info] Renamed to /home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.debugpy-2024.10.0-linux-x64
+2024-09-18 22:34:51.401 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp'
+    at o.create (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19406)
+    at u (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19517)
+    at $.hb (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36674)
+    at $.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:29001)
+    at async c.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14931)
+    at async W.ub (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:120356)
+2024-09-18 22:34:53.142 [info] Extension signature verification result for ms-python.python: Success. Executed: true. Duration: 2408ms.
+2024-09-18 22:34:54.526 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Executed: true. Duration: 2548ms.
+2024-09-18 22:34:58.516 [info] Extracted extension to file:///home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64: ms-python.python
+2024-09-18 22:34:58.593 [info] Renamed to /home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.python-2024.14.1-linux-x64
+2024-09-18 22:34:58.688 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp'
+    at o.create (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19406)
+    at u (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19517)
+    at $.hb (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36674)
+    at $.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:29001)
+    at async c.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14931)
+    at async W.ub (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:120356)
+2024-09-18 22:35:03.655 [info] Extracted extension to file:///home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.vscode-pylance-2024.9.1: ms-python.vscode-pylance
+2024-09-18 22:35:03.664 [info] Renamed to /home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/ms-python.vscode-pylance-2024.9.1
+2024-09-18 22:35:03.719 [info] Extension installed successfully: ms-python.debugpy vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json
+2024-09-18 22:35:03.720 [info] Extension installed successfully: ms-python.python vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json
+2024-09-18 22:35:03.720 [info] Extension installed successfully: ms-python.vscode-pylance vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json
+2024-09-18 22:35:03.761 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp'
+    at o.create (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19406)
+    at u (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19517)
+    at $.hb (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36674)
+    at $.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:29001)
+    at async c.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14931)
+    at async W.ub (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:120356)

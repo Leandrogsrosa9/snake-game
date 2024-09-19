@@ -1,0 +1,1658 @@
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Brands used across fxa-auth-server, fxa-payments-server, and fxa-settings.
+##
+## Unless otherwise indicated, brands cannot be:
+## - Transliterated.
+## - Translated.
+##
+## Declension should be avoided where possible, leaving the original
+## brand unaltered in prominent UI positions.
+##
+## For further details, consult:
+## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
+
+# Firefox and Mozilla Brand
+-brand-mozilla = Mozilla
+-brand-firefox = Firefox
+# "accounts" can be localized and should be lowercase, "Firefox" must be treated as a brand.
+# "Firefox accounts" refers to the service
+-product-firefox-accounts =
+    { $capitalization ->
+        [uppercase] Contas Firefox
+       *[lowercase] contas Firefox
+    }
+# "account" can and should be localized, "Mozilla" must be treated as a brand. Singular "Mozilla account" should be used in most cases.
+-product-mozilla-account =
+    { $capitalization ->
+        [uppercase] Conta Mozilla
+       *[lowercase] conta Mozilla
+    }
+# "accounts" can and should be localized, "Mozilla" must be treated as a brand. Plural "Mozilla accounts" is used when referring to something affecting all Mozilla accounts, not just the individual's account.
+# "accounts" should be lowercase in almost all cases. Uppercase is reserved for special use cases where headline case is necessary, for example legal document names and references.
+-product-mozilla-accounts =
+    { $capitalization ->
+        [uppercase] Contas Mozilla
+       *[lowercase] contas Mozilla
+    }
+# "account" should be localized and lowercase, "Firefox" must be treated as a brand.
+# This is used to refer to a user's account, e.g. "update your Firefox account ..."
+-product-firefox-account =
+    { $capitalization ->
+        [uppercase] Conta Firefox
+       *[lowercase] conta Firefox
+    }
+-product-mozilla-vpn = Mozilla VPN
+-product-mozilla-hubs = Mozilla Hubs
+-product-mdn-plus = MDN Plus
+-product-firefox-cloud = Firefox Cloud
+-product-mozilla-monitor = Mozilla Monitor
+-product-firefox-relay = Firefox Relay
+-product-pocket = Pocket
+-brand-apple = Apple
+-brand-google = Google
+-brand-paypal = PayPal
+-brand-name-stripe = Stripe
+-app-store = App Store
+-google-play = Google Play
+## FxA React - Strings shared between multiple FxA products for application error dialog
+
+app-general-err-heading = Erro geral na aplicação.
+app-general-err-message = Algo deu errado. Tente novamente mais tarde.
+
+## FxA React - Strings shared between multiple FxA products for application footer
+
+app-footer-mozilla-logo-label = Logotipo da { -brand-mozilla }
+app-footer-privacy-notice = Aviso de privacidade do site
+app-footer-terms-of-service = Termos de serviço
+
+## FxA React - Strings shared between multiple FxA products for application page title
+
+app-default-title = { -product-firefox-accounts }
+# This string is used as the default title for pages, displayed in the browser tab.
+app-default-title-2 = { -product-mozilla-accounts(capitalization: "uppercase") }
+# This string is used as the title of the page.
+# Variables:
+#   $title (String) - the name of the current page
+#                      (for example: "Two-step authentication")
+app-page-title = { $title } | { -product-firefox-accounts }
+# This string is used as the title of the page, displayed in the browser tab.
+# Variables:
+#   $title (String) - the name of the current page
+#                      (for example: "Two-step authentication")
+app-page-title-2 = { $title } | { -product-mozilla-accounts(capitalization: "uppercase") }
+
+## FxA React - Strings shared between multiple FxA products for external link
+
+# Message for screen readers, to announce that external link will open in new window
+link-sr-new-window = Abre em nova janela
+
+## FxA React - Strings shared between multiple FxA products for loading spinner
+
+# Aria label for spinner image indicating data is loading
+app-loading-spinner-aria-label-loading = Carregando…
+
+## FxA React - Strings shared between multiple FxA products for logo lockup
+
+app-logo-alt =
+    .alt = Logotipo do { -brand-firefox }
+app-logo-alt-2 =
+    .alt = Logotipo da { -brand-mozilla }
+app-logo-alt-3 =
+    .alt = Logotipo com m de { -brand-mozilla }
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Banner component
+## Used to show success, error or info messages
+
+# This aria-label applies to the dismiss/close button of the banner
+# This text is for screen-readers
+banner-dismiss-button =
+    .aria-label = Fechar
+# This message is displayed in a success banner
+# $accountsEmail is the senderʼs email address (origin of the email containing a new link). (e.g. accounts@firefox.com)
+link-expired-resent-link-success-message = Email reenviado. Adicione { $accountsEmail } nos seus contatos para assegurar uma entrega tranquila.
+# Error message displayed in an error banner. This is a general message when the cause of the error is unclear.
+link-expired-resent-code-error-message = Algo deu errado. Não foi possível enviar um novo código.
+
+## Brand Messaging component
+## Used to show in product messaging about upcoming brand changes
+
+# This aria-label applies to the dismiss/close button of the banner
+# This text is for screen-readers
+brand-banner-dismiss-button-2 =
+    .aria-label = Fechar aviso
+# This message is displayed as the title element in the banner, prior to actually launching the new brand
+brand-prelaunch-title = { -product-firefox-accounts } será renomeado para { -product-mozilla-accounts(capitalization: "lowercase") } em 1º de novembro
+# This message is displayed as sub title element in the banner, giving a it more context about the brand changes.
+brand-prelaunch-subtitle = Você continua entrando na sua conta com o mesmo nome de usuário e senha. Não há nenhuma outra mudança nos produtos que você usa.
+# This message is displayed as title element in the banner, after the brand changes take affect letting the user know that
+# no action is required on their part
+brand-postlaunch-title = Renomeamos { -product-firefox-accounts } para { -product-mozilla-accounts }. Você continua entrando na sua conta com o mesmo nome de usuário e senha. Não há nenhuma outra mudança nos produtos que você usa.
+# This is an extra link element, that directs users to a page where they can learn more about the branding changes.
+brand-learn-more = Saiba mais
+# Alt text for close banner image
+brand-close-banner =
+    .alt = Fechar aviso
+# Alt text for 'm' logo in banner header
+brand-m-logo =
+    .alt = Logotipo com m de { -brand-mozilla }
+
+## ButtonDownloadRecoveryKeyPDF
+## Clicking on this button downloads a PDF file that contains the user's account recovery key
+## The account recovery key can be used to recover data when users forget their account password
+
+# Button to download the account recovery key as a PDF file and navigate to the next step
+# The next (and final) step is an optional prompt to save a storage hint
+# .title will displayed as a tooltip on the button
+recovery-key-download-button-v3 = Baixar e continuar
+    .title = Baixar e continuar
+recovery-key-pdf-heading = Chave de recuperação de conta
+# Date when the account recovery key was created and this file was downloaded
+# { $date }: formatted date with 'medium' dateStyle format (e.g., for 'en': Jul 31, 2023)
+recovery-key-pdf-download-date = Gerada em: { $date }
+# Shown directly above recovery key value and preceeded by a key icon
+recovery-key-pdf-key-legend = Chave de recuperação de conta
+# Instructions in the text file to prompt the user to keep this information in a secure, easy to remember location.
+# Password resets without this account recovery key can result in data loss.
+# "key" here refers to "account recovery key"
+recovery-key-pdf-instructions = Essa chave permite recuperar seus dados criptografados no navegador (incluindo senhas, favoritos e histórico) caso você esqueça sua senha. Guarde em um lugar que você vai lembrar.
+# This heading is shown above a list of options for storing the account recovery key
+# "key" here refers to "account recovery key"
+recovery-key-pdf-storage-ideas-heading = Lugares onde guardar a chave
+# Followed by a link (https://mzl.la/3bNrM1I) to get more information and support
+recovery-key-pdf-support = Saiba mais sobre chave de recuperação de conta
+# Error message displayed in an alert bar if the PDF download failed.
+recovery-key-pdf-download-error = Desculpe, houve um problema ao baixar a chave de recuperação de conta.
+
+## ChooseNewsletters component
+## Checklist of newsletters that the user can choose to sign up to
+
+# Prompt above a checklist of newsletters
+choose-newsletters-prompt-2 = Obtenha mais da { -brand-mozilla }:
+# Newsletter checklist item
+choose-newsletters-option-latest-news =
+    .label = Receba nossas últimas notícias e novidades de produtos
+# Newsletter checklist item
+choose-newsletters-option-test-pilot =
+    .label = Acesso antecipado para testar novos produtos
+# Newsletter checklist item. This for a Mozilla Foundation newsletters,
+# "Action alerts" can be interpreted as "Calls to action"
+choose-newsletters-option-reclaim-the-internet =
+    .label = Avisos de ações para recuperar o controle da internet
+
+## ChooseWhatToSync component
+## Checklist of services/information that can be synced across signed in devices
+
+# Prompt above a checklist of services/information (e.g., passwords, bookmarks, etc.)
+# That users can choose to sync
+choose-what-to-sync-prompt-2 = Escolha o que sincronizar
+choose-what-to-sync-option-bookmarks =
+    .label = Favoritos
+choose-what-to-sync-option-history =
+    .label = Histórico
+choose-what-to-sync-option-passwords =
+    .label = Senhas
+choose-what-to-sync-option-addons =
+    .label = Extensões
+# Refers to 'tabs that are open', not the action
+choose-what-to-sync-option-tabs =
+    .label = Abas abertas
+choose-what-to-sync-option-prefs =
+    .label = Preferências
+choose-what-to-sync-option-addresses =
+    .label = Endereços
+choose-what-to-sync-option-paymentmethods =
+    .label = Métodos de pagamento
+
+## ConfirmWithLink
+## Users will see this page if a confirmation link was sent to their email address
+
+# Button to resend an email with the confirmation link
+confirm-with-link-resend-link-button = Não chegou em sua caixa de entrada ou pasta de spam? Reenviar
+# The link target may vary depending on the user's entry point into the confirmation page
+confirm-with-link-back-link = Voltar
+
+## Tooltip notifications for actions performed on account recovery keys or one-time use codes
+
+datablock-download =
+    .message = Baixado
+datablock-copy =
+    .message = Copiado
+datablock-print =
+    .message = Impresso
+
+## DeviceInfoBlock component
+## The strings here are used to display information about the origin of activity happening on a user's account
+## For example, when connecting another device to the user's account
+
+# Variables { $city }, { $region }, { $country } represent the estimated location of the user's device
+# For example, 'Vancouver, British Columbia, Canada (estimated)'
+device-info-block-location-city-region-country = { $city }, { $region }, { $country } (estimado)
+# Variables { $region }, { $country } represent the estimated location of the user's device
+# For example, 'British Columbia, Canada (estimated)'
+device-info-block-location-region-country = { $region }, { $country } (estimado)
+# Variables { $city }, { $country } represent the estimated location of the user's device
+# For example, 'Vancouver, Canada (estimated)'
+device-info-block-location-city-country = { $city }, { $country } (estimado)
+# Variable { $country } represent the estimated location of the user's device
+# For example, 'Canada (estimated)'
+device-info-block-location-country = { $country } (estimado)
+# When an approximate location for the user's device could not be determined
+device-info-block-location-unknown = Local desconhecido
+# Variable { $browserName } is the browser that created the request (e.g., Firefox)
+# Variable { $genericOSName } is the name of the operating system that created the request (e.g., MacOS, Windows, iOS)
+device-info-browser-os = { $browserName } em { $genericOSName }
+# Variable { $ipAddress } represents the IP address where the request originated
+# The IP address is a string of numbers separated by periods (e.g., 192.158.1.38)
+device-info-ip-address = Endereço IP: { $ipAddress }
+
+## FormPasswordWithBalloons
+
+signup-new-password-label =
+    .label = Senha
+signup-confirm-password-label =
+    .label = Repetir senha
+signup-submit-button = Criar conta
+form-reset-password-with-balloon-new-password =
+    .label = Nova senha
+form-reset-password-with-balloon-confirm-password =
+    .label = Confirme a nova senha
+form-reset-password-with-balloon-submit-button = Redefinir senha
+form-reset-password-with-balloon-match-error = As senhas não coincidem
+form-password-sr-too-short-message = A senha deve ter pelo menos 8 caracteres.
+form-password-sr-not-email-message = A senha não pode ter seu endereço de email
+form-password-sr-not-common-message = A senha não deve ser uma comumente usada.
+form-password-sr-requirements-met = A senha inserida respeita todos os requisitos de senha.
+form-password-sr-passwords-match = As senhas inseridas coincidem.
+
+## FormVerifyCode
+
+# Fallback default localized error message for empty input field
+form-verify-code-default-error = Este campo é obrigatório
+
+# GetDataTrio component, part of Account Recovery Key flow
+
+get-data-trio-title-firefox = { -brand-firefox }
+get-data-trio-title-firefox-recovery-key = Chave de recuperação de conta { -brand-firefox }
+get-data-trio-title-backup-verification-codes = Códigos de autenticação de backup
+get-data-trio-download-2 =
+    .title = Baixar
+    .aria-label = Baixar
+get-data-trio-copy-2 =
+    .title = Copiar
+    .aria-label = Copiar
+get-data-trio-print-2 =
+    .title = Imprimir
+    .aria-label = Imprimir
+
+## Images - these are all aria labels used for illustrations
+## Aria labels are used as alternate text that can be read aloud by screen readers.
+
+hearts-broken-image-aria-label =
+    .aria-label = Um computador, um celular e a imagem de um coração partido em cada um
+hearts-verified-image-aria-label =
+    .aria-label = Um computador, um celular e um tablet com um coração pulsante em cada um
+signin-recovery-code-image-description =
+    .aria-label = Documento que contém texto oculto.
+signin-totp-code-image-label =
+    .aria-label = Um dispositivo com um código oculto de 6 dígitos.
+confirm-signup-aria-label =
+    .aria-label = Um envelope contendo um link
+# Used for an image of a key on a shield surrounded by 5 other icons representing information that can be recovered with the account recovery key.
+# Other icons and their meaning: Gear (settings), star (favorites), clock (history), magnifying glass (search) and lock (passwords).
+security-shield-aria-label =
+    .aria-label = Ilustração para representar uma chave de recuperação de conta.
+# Used for an image of a single key.
+recovery-key-image-aria-label =
+    .aria-label = Ilustração para representar uma chave de recuperação de conta.
+lock-image-aria-label =
+    .aria-label = Uma ilustração de um cadeado
+lightbulb-aria-label =
+    .aria-label = Ilustração para representar a criação de uma dica de onde guardou.
+email-code-image-aria-label =
+    .aria-label = Ilustração para representar um email contendo um código.
+
+## Input Password
+
+# Tooltip displayed on a password input visibility toggle. Expresses the toggle action, where clicking on the toggle will hide the password.
+input-password-hide = Ocultar senha
+# Tooltip displayed on a password input visibility toggle. Expresses the toggle action, where clicking on the toggle will show the password.
+input-password-show = Exibir senha
+# Message read by screen readers when focus is on a password input visibility toggle. Expresses current (visible) state of the textbox content.
+input-password-hide-aria-2 = Sua senha está visível na tela.
+# Message read by screen readers when focus is on a password input visibility toggle. Expresses current (hidden) state of the textbox content.
+input-password-show-aria-2 = Sua senha está oculta.
+# Message read by screen readers after clicking on a password input visibility toggle to show the password. Expresses the new (visible) state of the textbox content.
+input-password-sr-only-now-visible = Agora sua senha está visível na tela.
+# Message read by screen readers after clicking on a password input visibility toggle to hide the password. Expresses the new (hidden) state of the textbox content.
+input-password-sr-only-now-hidden = Agora sua senha está oculta.
+# Back button on legal/terms or legal/privacy that takes users to the previous page
+legal-back-button = Voltar
+
+## LinkDamaged component
+
+# The user followed a password reset link that was received by email
+# but the link is damaged (for example mistyped or broken by the email client)
+reset-pwd-link-damaged-header = Link para redefinir senha danificado
+# The user followed a link to signin that was received by email
+# but the link was damaged (for example mistyped or broken by the email client).
+signin-link-damaged-header = Link de confirmação danificado
+# The user followed a link to report an invalid signin attempt that was received by email
+# but the link was damaged (for example mistyped or broken by the email client).
+report-signin-link-damaged-header = Link danificado
+# The user followed a link received by email, but the link was damaged.
+reset-pwd-link-damaged-message = O link que você clicou tem caracteres faltando. Pode ter sido corrompido pelo seu cliente de email. Copie o endereço com cuidado e tente novamente.
+
+## LinkExpired component
+
+# Button to request a new link if the previous link that was emailed to the user is expired
+# This button is used for password reset and signin confirmation 
+reset-pwd-resend-link = Receber novo link
+
+## LinkExpiredResetPassword component
+
+# The user followed a password reset link, but that link is expired and no longer valid
+reset-pwd-link-expired-header = O link para redefinir a senha expirou
+reset-pwd-link-expired-message = O link que você clicou para redefinir sua senha expirou.
+
+## LinkRememberPassword component
+
+# immediately before remember-password-signin-link
+remember-password-text = Lembra sua senha?
+# link navigates to the sign in page
+remember-password-signin-link = Entrar
+
+## LinkUsed component
+
+# The user followed a primary email confirmation link, but that link is has been used and is no longer valid
+primary-email-confirmation-link-reused = Email principal já foi confirmado
+# The user followed a sign-in confirmation link, but that link has been used and is no longer valid
+signin-confirmation-link-reused = Acesso já confirmado
+confirmation-link-reused-message = Esse link de confirmação já foi usado e só pode ser usado uma vez.
+# Users will see this heading when the URL or network request is malformed, e.g. a query parameter is required and is invalid
+error-bad-request = Requisição inválida
+
+## PasswordInfoBalloon
+## Balloon displayed next to password input field
+
+password-info-balloon-why-password-info = Você precisa dessa senha para acessar dados criptografados armazenados conosco.
+password-info-balloon-reset-risk-info = Redefinir significa potencialmente perder dados como senhas e favoritos.
+
+## PasswordStrengthBalloon component
+
+password-strength-balloon-heading = Requisitos de senha
+password-strength-balloon-min-length = Pelo menos 8 caracteres
+password-strength-balloon-not-email = Não ser seu endereço de email
+password-strength-balloon-not-common = Não ser uma senha comumente usada
+password-strength-balloon-stay-safe-tips = Fique seguro, não reuse senhas. Veja mais dicas para <linkExternal>criar senhas fortes</linkExternal>.
+
+## Ready component
+
+reset-password-complete-header = Sua senha foi redefinida
+ready-complete-set-up-instruction = Conclua a configuração inserindo a nova senha em seus outros dispositivos com { -brand-firefox }.
+ready-start-browsing-button = Iniciar navegação
+# This is a string that tells the user they can use whatever service prompted them to reset their password or to verify their email
+# Variables:
+# { $serviceName } represents a product name (e.g., Mozilla VPN) that will be passed in as a variable
+ready-use-service = Está tudo pronto para usar o { $serviceName }
+# The user successfully accomplished a task (password reset, confirm email) that lets them use their account
+ready-use-service-default = Já está tudo pronto para usar as configurações da conta
+# Message shown when the account is ready but the user is not signed in
+ready-account-ready = Sua conta está pronta!
+ready-continue = Continuar
+sign-in-complete-header = Acesso confirmado
+sign-up-complete-header = Conta confirmada
+primary-email-verified-header = Email principal confirmado
+
+## Alert Bar
+
+alert-bar-close-message = Fechar mensagem
+
+## User's avatar
+
+avatar-your-avatar =
+    .alt = Seu avatar
+avatar-default-avatar =
+    .alt = Avatar padrão
+
+##
+
+
+# BentoMenu component
+
+bento-menu-title-3 = Produtos { -brand-mozilla }
+bento-menu-tagline = Mais produtos da { -brand-mozilla } que protegem sua privacidade
+bento-menu-vpn-2 = { -product-mozilla-vpn }
+bento-menu-monitor-3 = { -product-mozilla-monitor }
+bento-menu-pocket-2 = { -product-pocket }
+bento-menu-firefox-relay-2 = { -product-firefox-relay }
+bento-menu-firefox-desktop = Navegador { -brand-firefox } para computador
+bento-menu-firefox-mobile = Navegador { -brand-firefox } para dispositivos móveis
+bento-menu-made-by-mozilla = Feito pela { -brand-mozilla }
+
+## Connect another device promo
+
+connect-another-fx-mobile = Instale o { -brand-firefox } no celular ou tablet
+connect-another-find-fx-mobile-2 = Encontre o { -brand-firefox } no { -google-play } ou na { -app-store }.
+# Alt text for Google Play and Apple App store images that will be shown if the image can't be loaded.
+# These images are used to encourage users to download Firefox on their mobile devices.
+connect-another-play-store-image =
+    .title = Instale o { -brand-firefox } a partir do { -google-play }
+connect-another-app-store-image-2 =
+    .title = Instale o { -brand-firefox } a partir da { -app-store }
+
+##
+
+
+## Connected services section
+
+cs-heading = Serviços conectados
+cs-description = Tudo em que você está conectado e usando.
+cs-cannot-refresh = Desculpe, houve um problema ao atualizar a lista de serviços conectados.
+cs-cannot-disconnect = Cliente não encontrado, não é possível desconectar
+# This string is used in a notification message near the top of the page.
+# Variables:
+#   $service (String) - the name of a device or service that uses Mozilla accounts
+#                       (for example: "Firefox Lockwise")
+cs-logged-out-2 = Desconectado da conta em { $service }
+cs-refresh-button =
+    .title = Atualizar serviços conectados
+# Link text to a support page on missing or duplicate devices
+cs-missing-device-help = Itens faltando ou duplicados?
+cs-disconnect-sync-heading = Desconectar da sincronização
+
+## This string is used in a modal dialog when the user starts the disconnect from
+## Sync process.
+## Variables:
+##   $device (String) - the name of a device using Mozilla accounts
+##                      (for example: "Firefox Nightly on Google Pixel 4a")
+
+cs-disconnect-sync-content-3 = Seus dados de navegação permanecerão em <span>{ $device }</span>, mas não serão mais sincronizados com sua conta.
+cs-disconnect-sync-reason-3 = Qual o principal motivo para desconectar <span>{ $device }</span>?
+
+## The following are the options for selecting a reason for disconnecting the
+## device
+
+cs-disconnect-sync-opt-prefix = Este dispositivo:
+cs-disconnect-sync-opt-suspicious = É suspeito
+cs-disconnect-sync-opt-lost = Foi perdido ou roubado
+cs-disconnect-sync-opt-old = É antigo ou foi substituído
+cs-disconnect-sync-opt-duplicate = Está duplicado
+cs-disconnect-sync-opt-not-say = Prefiro não dizer
+
+##
+
+cs-disconnect-advice-confirm = Ok, entendi
+cs-disconnect-lost-advice-heading = Desconectado dispositivo perdido ou roubado
+cs-disconnect-lost-advice-content-3 = Como seu dispositivo foi perdido ou roubado, para manter suas informações seguras, você deve alterar a senha da sua { -product-mozilla-account } nas configurações da conta. Também deve buscar informações do fabricante do dispositivo sobre como apagar seus dados remotamente.
+cs-disconnect-suspicious-advice-heading = Desconectado dispositivo suspeito
+cs-disconnect-suspicious-advice-content-2 = Se o dispositivo desconectado for de fato suspeito, para manter suas informações seguras, você deve alterar a senha da sua { -product-mozilla-account } nas configurações da conta. Também deve alterar todas as outras senhas salvas no { -brand-firefox } digitando about:login na barra de endereços.
+cs-sign-out-button = Desconectar
+
+##
+
+
+## Data collection section
+
+dc-heading = Coleta e uso de dados
+dc-subheader-moz-accounts = { -product-mozilla-accounts(capitalization: "uppercase") }
+dc-subheader-ff-browser = Navegador { -brand-firefox }
+dc-subheader-content-2 = Permitir que { -product-mozilla-accounts } envie dados técnicos e de interação para a { -brand-mozilla }.
+dc-subheader-ff-content = Para revisar ou atualizar as configurações de dados técnicos e de interação do navegador { -brand-firefox }, abra as configurações do { -brand-firefox } e percorra o painel de privacidade e segurança.
+dc-opt-out-success-2 = Opção por não permitir feita com sucesso. { -product-mozilla-accounts(capitalization: "uppercase") } não irá enviar dados técnicos ou de interação para a { -brand-mozilla }.
+dc-opt-in-success-2 = Obrigado! Compartilhar esses dados nos ajuda a melhorar as { -product-mozilla-accounts }.
+dc-opt-in-out-error-2 = Desculpe, houve um problema ao alterar sua preferência de coleta de dados
+dc-learn-more = Saiba mais
+
+# DropDownAvatarMenu component
+
+drop-down-menu-title-2 = Menu da { -product-mozilla-account }
+# This string is used to show the current user's name or email in the settings page menu.
+# Variables:
+#   $user (String) - the user's name (or email address, if they haven't added their name to their account)
+drop-down-menu-signed-in-as = <signin>Conectado como</signin><user>{ $user }</user>
+drop-down-menu-sign-out = Desconectar
+drop-down-menu-sign-out-error-2 = Desculpe, houve um problema ao desconectar da sua conta
+
+## Flow Container
+
+flow-container-back = Voltar
+
+## FlowRecoveryKeyConfirmPwd - Second view in the PageRecoveryKeyCreate flow
+## Users see this view when they are generating a new account recovery key
+## This screen asks the user to confirm their password before generating a new key
+
+flow-recovery-key-confirm-pwd-heading-v2 = Digite a senha novamente por motivo de segurança
+flow-recovery-key-confirm-pwd-input-label = Digite sua senha
+# Clicking on this button will check the password and create an account recovery key
+flow-recovery-key-confirm-pwd-submit-button = Criar chave de recuperação de conta
+# For users with an existing account recovery key, clicking on this button will
+# check the password, delete the existing key and create a new account recovery key
+flow-recovery-key-confirm-pwd-submit-button-change-key = Criar nova chave de recuperação de conta
+
+## FlowRecoveryKeyDownload - Third view in the PageRecoveryKeyCreate flow
+## Users see this view when they are generating a new account recovery key
+## This screen displays the generated key and allows users to download or copy the key
+
+flow-recovery-key-download-heading-v2 = Chave de recuperação de conta criada — Baixe e guarde agora
+# The "key" here refers to the term "account recovery key"
+flow-recovery-key-download-info-v2 = Esta chave permite que você recupere seus dados caso esqueça sua senha. Baixe agora e guarde em algum lugar que você se lembre. Depois não poderá voltar a esta página.
+# This link allows user to proceed to the next step without clicking the download button
+flow-recovery-key-download-next-link-v2 = Continuar sem baixar
+# This heading is shown above a list of options for storing the account recovery key
+# "key" here refers to "account recovery key"
+flow-recovery-key-download-storage-ideas-heading-v2 = Lugares para guardar a chave:
+flow-recovery-key-download-storage-ideas-folder-v2 = Pasta em um dispositivo seguro
+flow-recovery-key-download-storage-ideas-cloud = Armazenamento confiável em nuvem
+flow-recovery-key-download-storage-ideas-print-v2 = Cópia física impressa
+flow-recovery-key-download-storage-ideas-pwd-manager = Gerenciador de senhas
+
+## FlowRecoveryKeyHint
+## This is the fourth and final step in the account recovery key creation flow
+## Prompts the user to save an (optional) storage hint about the location of their account recovery key.
+
+# The header of the fourth step in the account recovery key creation flow
+# "key" here refers to the "account recovery key"
+flow-recovery-key-hint-header-v2 = Adicione uma dica para ajudar a encontrar sua chave
+# This message explains why saving a storage hint can be helpful. The account recovery key could be "stored" in a physical (e.g., printed) or virtual location (e.g., in a device folder or in the cloud).
+# "it" here refers to the storage hint, NOT the "account recovery key"
+flow-recovery-key-hint-message-v3 = Esta dica deve te ajudar a lembrar onde guardou a chave de recuperação de conta. A dica pode ser exibida durante a redefinição de senha para recuperar seus dados.
+# The label for the text input where the user types in the storage hint they want to save.
+# The storage hint is optional, and users can leave this blank.
+flow-recovery-key-hint-input-v2 =
+    .label = Digite uma dica (opcional)
+# The text of the "submit" button. Clicking on this button will save the hint (if provided) and exit the account recovery key creation flow.
+# "Finish" refers to "Finish the account recovery key creation process"
+flow-recovery-key-hint-cta-text = Pronto
+# Success message displayed in alert bar after the user has finished creating an account recovery key.
+flow-recovery-key-success-alert = Criada chave de recuperação de conta
+# Error displayed in a tooltip if the hint entered by the user exceeds the character limit.
+# "Hint" refers to "storage hint"
+flow-recovery-key-hint-char-limit-error = A dica deve conter menos de 255 caracteres.
+# Error displayed in a tooltip if the user included unsafe unicode characters in their hint.
+# "Hint" refers to "storage hint"
+flow-recovery-key-hint-unsafe-char-error = A dica não pode conter caracteres unicode não seguros. São permitidos somente letras, números, sinais de pontuação e símbolos.
+
+## FlowRecoveryKeyInfo - First view in the PageRecoveryKeyCreate flow
+
+# The header of the first view in the Recovery Key Create flow
+flow-recovery-key-info-header = Crie uma chave de recuperação de conta, para o caso de você esquecer sua senha
+# The header of the first view in the Recovery Key Create flow when replacing an existing recovery key
+flow-recovery-key-info-header-change-key = Alteração da chave de recuperação de conta
+# In the first view of the PageRecoveryKeyCreate flow, this is the first of two bullet points explaining why the user should create an account recovery key
+flow-recovery-key-info-shield-bullet-point-v2 = Criptografamos dados de navegação, senhas, favoritos e muito mais. É ótimo para privacidade, mas você pode perder seus dados se esquecer sua senha.
+# In the first view of the PageRecoveryKeyCreate flow, this is the second of two bullet points explaining why the user should create an account recovery key
+flow-recovery-key-info-key-bullet-point-v2 = É por isso que criar uma chave de recuperação de conta é tão importante. Você pode usar para restaurar seus dados.
+# The text of the "submit" button to start creating (or changing) an account recovery key
+flow-recovery-key-info-cta-text-v3 = Começar
+# Link to cancel account recovery key change and return to settings
+flow-recovery-key-info-cancel-link = Cancelar
+
+## HeaderLockup component, the header in account settings
+
+header-menu-open = Fechar menu
+header-menu-closed = Menu de navegação do site
+header-back-to-top-link =
+    .title = Voltar ao início
+header-title-2 = { -product-mozilla-account(capitalization: "uppercase") }
+header-help = Ajuda
+
+## Linked Accounts section
+
+la-heading = Contas vinculadas
+la-description = Você autorizou o acesso às seguintes contas.
+la-unlink-button = Desvincular
+la-unlink-account-button = Desvincular
+la-set-password-button = Definir senha
+la-unlink-heading = Desvincular da conta de terceiros
+la-unlink-content-3 = Tem certeza que quer desvincular sua conta? Fazer isso não te desconecta automaticamente dos seus serviços. Para fazer isso, você precisa desconectar manualmente na seção de serviços conectados.
+la-unlink-content-4 = Antes de desvincular sua conta, você deve definir uma senha. Sem uma senha, não há como você entrar após desvincular sua conta.
+nav-linked-accounts = { la-heading }
+
+## Modal - Default values for a message directed at the user where the user can typically Confirm or Cancel.
+
+modal-close-title = Fechar
+modal-cancel-button = Cancelar
+modal-default-confirm-button = Confirmar
+
+## Modal Verify Session
+
+mvs-verify-your-email-2 = Confirme seu email
+mvs-enter-verification-code-2 = Digite o código de confirmação
+# This string is used to show a notification to the user for them to enter confirmation code to confirm their email.
+# Variables:
+#   email (String) - the user's email
+mvs-enter-verification-code-desc-2 = Digite o código de confirmação enviado para <email>{ $email }</email> há cerca de 5 minutos.
+msv-cancel-button = Cancelar
+msv-submit-button-2 = Confirmar
+
+## Settings Nav
+
+nav-settings = Configurações
+nav-profile = Perfil
+nav-security = Segurança
+nav-connected-services = Serviços conectados
+nav-data-collection = Coleta e uso de dados
+nav-paid-subs = Assinaturas pagas
+nav-email-comm = Comunicações por email
+
+## Two Step Authentication - replace backup authentication code
+
+tfa-replace-code-error-3 = Houve um problema ao substituir seus códigos de autenticação de backup
+tfa-create-code-error = Houve um problema ao criar seus códigos de autenticação de backup
+tfa-replace-code-success-1 = Novos códigos foram criados. Guarde esses códigos de autenticação de backup de uso único em um local seguro. Você precisará deles para acessar sua conta, se não estiver com seu dispositivo móvel.
+tfa-replace-code-success-alert-3 = Códigos de autenticação de backup da conta atualizados
+tfa-replace-code-1-2 = Etapa 1 de 2
+tfa-replace-code-2-2 = Etapa 2 de 2
+
+## Avatar change page
+
+avatar-page-title =
+    .title = Foto do perfil
+avatar-page-add-photo = Adicionar foto
+avatar-page-add-photo-button =
+    .title = { avatar-page-add-photo }
+avatar-page-take-photo = Tirar foto
+avatar-page-take-photo-button =
+    .title = { avatar-page-take-photo }
+avatar-page-remove-photo = Remover foto
+avatar-page-remove-photo-button =
+    .title = { avatar-page-remove-photo }
+avatar-page-retake-photo = Tirar outra foto
+avatar-page-cancel-button = Cancelar
+avatar-page-save-button = Salvar
+avatar-page-saving-button = Salvando…
+avatar-page-zoom-out-button =
+    .title = Reduzir
+avatar-page-zoom-in-button =
+    .title = Ampliar
+avatar-page-rotate-button =
+    .title = Girar
+avatar-page-camera-error = Não foi possível iniciar a câmera
+avatar-page-new-avatar =
+    .alt = nova foto de perfil
+avatar-page-file-upload-error-3 = Houve um problema ao enviar sua foto de perfil
+avatar-page-delete-error-3 = Houve um problema ao excluir sua foto de perfil
+avatar-page-image-too-large-error-2 = O arquivo de imagem é grande demais para ser enviado
+
+##
+
+
+## Password change page
+
+pw-change-header =
+    .title = Alterar senha
+pw-8-chars = Pelo menos 8 caracteres
+pw-not-email = Não ser seu endereço de email
+pw-change-must-match = A nova senha deve ser igual à digitada na confirmação
+pw-commonly-used = Não ser uma senha comumente usada
+# linkExternal is a link to a mozilla.org support article on password strength
+pw-tips = Fique seguro, não reuse senhas. Veja mais dicas para <linkExternal>criar senhas fortes</linkExternal>.
+pw-change-cancel-button = Cancelar
+pw-change-save-button = Salvar
+pw-change-forgot-password-link = Esqueceu a senha?
+pw-change-current-password =
+    .label = Digite a senha atual
+pw-change-new-password =
+    .label = Digite a nova senha
+pw-change-confirm-password =
+    .label = Confirme a nova senha
+pw-change-success-alert-2 = Senha atualizada
+
+##
+
+
+## Password create page
+
+pw-create-header =
+    .title = Criar senha
+pw-create-success-alert-2 = Senha definida
+pw-create-error-2 = Desculpe, houve um problema ao definir sua senha
+
+##
+
+
+## Delete account page
+
+delete-account-header =
+    .title = Excluir conta
+delete-account-step-1-2 = Etapa 1 de 2
+delete-account-step-2-2 = Etapa 2 de 2
+delete-account-confirm-title-4 = Você pode ter conectado sua { -product-mozilla-account } a um ou mais dos seguintes produtos ou serviços { -brand-mozilla } que mantêm você protegido e produtivo na web:
+delete-account-product-mozilla-account = { -product-mozilla-account(capitalization: "uppercase") }
+delete-account-product-mozilla-vpn = { -product-mozilla-vpn }
+delete-account-product-mdn-plus = { -product-mdn-plus }
+delete-account-product-mozilla-hubs = { -product-mozilla-hubs }
+delete-account-product-pocket = { -product-pocket }
+delete-account-product-mozilla-monitor = { -product-mozilla-monitor }
+delete-account-product-firefox-relay = { -product-firefox-relay }
+delete-account-product-firefox-sync = Sincronizando dados do { -brand-firefox }
+delete-account-product-firefox-addons = Extensões do { -brand-firefox }
+delete-account-acknowledge = Esteja ciente que ao excluir sua conta:
+delete-account-chk-box-1-v3 =
+    .label = Todas as assinaturas pagas que você tiver serão canceladas (exceto o { -product-pocket })
+delete-account-chk-box-2 =
+    .label = Você pode perder informações e recursos salvos dentro de produtos { -brand-mozilla }
+delete-account-chk-box-3 =
+    .label = Reativar com este email pode não restaurar suas informações salvas
+delete-account-chk-box-4 =
+    .label = Quaisquer extensões e temas que você publicou em addons.mozilla.org serão excluídos
+delete-account-continue-button = Continuar
+delete-account-password-input =
+    .label = Digite a senha
+pocket-delete-notice = Se você tiver assinatura do Pocket Premium, certifique-se de <a>cancelar sua assinatura</a> antes de excluir sua conta.
+pocket-delete-notice-marketing = Para parar de receber emails de marketing da Mozilla Corporation e da Fundação Mozilla, você deve <a>solicitar a exclusão de seus dados de marketing</a>.
+delete-account-cancel-button = Cancelar
+delete-account-delete-button-2 = Excluir
+
+##
+
+
+## Display name page
+
+display-name-page-title =
+    .title = Nome de exibição
+display-name-input =
+    .label = Digite o nome de exibição
+submit-display-name = Salvar
+cancel-display-name = Cancelar
+display-name-update-error-2 = Houve um problema ao atualizar seu nome de exibição
+display-name-success-alert-2 = Nome de exibição atualizado
+
+##
+
+
+## Recent account activity
+## All strings except title indicate an event that occurred from the user's account
+## These are displayed as a list with the date when the event occured
+
+recent-activity-title = Atividade recente da conta
+recent-activity-account-create-v2 = Conta criada
+recent-activity-account-disable-v2 = Conta desativada
+recent-activity-account-enable-v2 = Conta ativada
+recent-activity-account-login-v2 = Iniciada entrada na conta
+recent-activity-account-reset-v2 = Iniciada redefinição de senha
+# This string appears under recent account activity when there were email bounces associated with the account, but those were recently cleared (i.e. removed/deleted).
+# An email bounce is when an email is sent to an email address and fails/receives a non-delivery receipt from the recipient's mail server.
+recent-activity-emails-clearBounces-v2 = Devoluções de email excluídas
+recent-activity-account-login-failure = Falha na tentativa de entrar na conta
+recent-activity-account-two-factor-added = Autenticação em duas etapas ativada
+recent-activity-account-two-factor-requested = Autenticação em duas etapas solicitada
+recent-activity-account-two-factor-failure = Falha na autenticação em duas etapas
+recent-activity-account-two-factor-success = Autenticação em duas etapas bem-sucedida
+recent-activity-account-two-factor-removed = Autenticação em duas etapas removida
+recent-activity-account-password-reset-requested = Redefinição de senha requisitada pela conta
+recent-activity-account-password-reset-success = Redefinição de senha da conta bem-sucedida
+recent-activity-account-recovery-key-added = Chave de recuperação de conta ativada
+recent-activity-account-recovery-key-verification-failure = Falha na verificação da chave de recuperação de conta
+recent-activity-account-recovery-key-verification-success = Verificação da chave de recuperação de conta bem-sucedida
+recent-activity-account-recovery-key-removed = Removida a chave de recuperação de conta
+recent-activity-account-password-added = Nova senha adicionada
+recent-activity-account-password-changed = Senha alterada
+recent-activity-account-secondary-email-added = Endereço de email secundário adicionado
+recent-activity-account-secondary-email-removed = Endereço de email secundário removido
+recent-activity-account-emails-swapped = Emails primário e secundário invertidos
+# Security event was recorded, but the activity details are unknown or not shown to user
+recent-activity-unknown = Outra atividade da conta
+
+## PageRecoveryKeyCreate
+
+# The page title displayed at the top of the flow container
+recovery-key-create-page-title = Chave de recuperação de conta
+# Tooltip text and aria label for back arrow that takes users out of the account recovery key generation flow
+# and back to account settings
+recovery-key-create-back-button-title = Voltar à configuração
+
+## Add secondary email page
+
+add-secondary-email-step-1 = Etapa 1 de 2
+add-secondary-email-error-2 = Houve um problema ao criar este email
+add-secondary-email-page-title =
+    .title = Email secundário
+add-secondary-email-enter-address =
+    .label = Digite um endereço de email
+add-secondary-email-cancel-button = Cancelar
+add-secondary-email-save-button = Salvar
+# This message is shown when a user tries to add a secondary email that is a
+# Firefox Relay email mask (generated email address that can be used in place of
+# your real email address)
+add-secondary-email-mask = Máscaras de email não podem ser usadas como email secundário
+
+## Verify secondary email page
+
+add-secondary-email-step-2 = Etapa 2 de 2
+verify-secondary-email-error-3 = Houve um problema ao enviar o código de confirmação
+verify-secondary-email-page-title =
+    .title = Email secundário
+verify-secondary-email-verification-code-2 =
+    .label = Digite o código de confirmação
+verify-secondary-email-cancel-button = Cancelar
+verify-secondary-email-verify-button-2 = Confirmar
+# This string is an instruction in a form.
+# Variables:
+#   $email (String) - the user's email address, which does not need translation.
+verify-secondary-email-please-enter-code-2 = Digite o código de confirmação enviado para <strong>{ $email }</strong> há cerca de 5 minutos.
+# This string is a confirmation message shown after verifying an email.
+# Variables:
+#   $email (String) - the user's email address, which does not need translation.
+verify-secondary-email-success-alert-2 = { $email } adicionado com sucesso
+
+##
+
+# Link to delete account on main Settings page
+delete-account-link = Excluir conta
+
+## Two Step Authentication
+
+tfa-title = Autenticação em duas etapas
+tfa-step-1-3 = Etapa 1 de 3
+tfa-step-2-3 = Etapa 2 de 3
+tfa-step-3-3 = Etapa 3 de 3
+tfa-button-continue = Continuar
+tfa-button-cancel = Cancelar
+tfa-button-finish = Concluir
+tfa-incorrect-totp = Código de autenticação em duas etapas incorreto
+tfa-cannot-retrieve-code = Houve um problema ao buscar seu código.
+tfa-cannot-verify-code-4 = Houve um problema ao confirmar seu código de autenticação de backup
+tfa-incorrect-recovery-code-1 = Código de autenticação de backup incorreto
+tfa-enabled = Autenticação em duas etapas ativada
+tfa-scan-this-code = Leia este código QR usando um destes <linkExternal>aplicativos de autenticação</linkExternal>.
+# This is the image alt text for a QR code.
+# Variables:
+#   $secret (String) - a long alphanumeric string that does not require translation
+# DEV NOTE: Set image alt text per fluent/react documentation, do not use the below as an example
+tfa-qa-code-alt = Use o código { $secret } para configurar a autenticação em duas etapas em aplicativos suportados.
+tfa-qa-code =
+    .alt = { tfa-qa-code-alt }
+tfa-button-cant-scan-qr = Não consegue capturar o código?
+# When the user cannot use a QR code.
+tfa-enter-secret-key = Digite esta chave secreta no seu aplicativo de autenticação:
+tfa-enter-totp-v2 = Agora digite o código de autenticação do seu aplicativo de autenticação.
+tfa-input-enter-totp-v2 =
+    .label = Digite o código de autenticação
+tfa-save-these-codes-1 = Guarde esses códigos de autenticação de backup de uso único em um local seguro, para quando você não estiver com seu dispositivo móvel.
+tfa-enter-code-to-confirm-1 = Digite agora um dos seus códigos de autenticação de backup para confirmar que você salvou. Você precisará de um código para entrar na conta, caso não tenha acesso ao seu dispositivo móvel.
+tfa-enter-recovery-code-1 =
+    .label = Digite um código de autenticação de backup
+
+##
+
+
+## Product promotion
+
+product-promo-monitor =
+    .alt = { -product-mozilla-monitor }
+product-promo-monitor-description = Descubra onde suas informações privativas estão expostas e recupere o controle sobre elas
+product-promo-monitor-plus-description = Privacidade é importante: Descubra onde suas informações privativas estão expostas e recupere o controle sobre elas
+# Links out to the Monitor site
+product-promo-monitor-cta = Obtenha uma verificação gratuita
+# Links out to the Monitor pricing site
+product-promo-monitor-plus-cta = Iniciar
+
+## Profile section
+
+profile-heading = Perfil
+profile-picture =
+    .header = Foto
+profile-display-name =
+    .header = Nome de exibição
+profile-primary-email =
+    .header = Email principal
+
+##
+
+
+## Progress bar
+
+# This is the aria-label text for the progress bar. The progress bar is meant to visually show the user how much progress they have made through the steps of a given flow.
+# Variables:
+#   $currentStep (number) - the step which the user is currently on
+#   $numberOfSteps (number) - the total number of steps in a given flow
+progress-bar-aria-label-v2 = Etapa { $currentStep } de { $numberOfSteps }.
+
+## Security section of Setting
+
+security-heading = Segurança
+security-password =
+    .header = Senha
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Criada em { $date }
+security-not-set = Não definida
+security-action-create = Criar
+security-set-password = Defina uma senha para sincronizar e usar determinados recursos de segurança da conta.
+# Link opens a list of recent account activity (e.g., login attempts, password changes, etc.)
+security-recent-activity-link = Ver atividade recente da conta
+signout-sync-header = Sessão expirada
+signout-sync-session-expired = Desculpe, algo deu errado. Saia da sua conta no menu do navegador e tente novamente.
+
+## Switch component
+
+# Used as "title" attribute when the switch is "on" and interaction turns the switch to "off"
+switch-turn-off = Desativar
+# Used as "title" attribute when the switch is "off" and interaction turns the switch to "on"
+switch-turn-on = Ativar
+# Used as "title" attribute when switch has been interacted with and form is submitting
+switch-submitting = Enviando…
+switch-is-on = ativado
+switch-is-off = desativado
+
+## Sub-section row Defaults
+
+row-defaults-action-add = Adicionar
+row-defaults-action-change = Alterar
+row-defaults-action-disable = Desativar
+row-defaults-status = Nenhum
+
+## Account recovery key sub-section on main Settings page
+
+rk-header-1 = Chave de recuperação de conta
+rk-enabled = Ativado
+rk-not-set = Não definido
+rk-action-create = Criar
+# Button to delete the existing account recovery key and create a new one
+rk-action-change-button = Alterar
+rk-action-remove = Remover
+rk-key-removed-2 = Chave de recuperação da conta removida
+rk-cannot-remove-key = Não foi possível remover a chave de recuperação da sua conta.
+rk-refresh-key-1 = Atualizar chave de recuperação de conta
+rk-content-explain = Restaure suas informações caso esqueça sua senha.
+rk-cannot-verify-session-4 = Desculpe, houve um problema ao confirmar a sessão.
+rk-remove-modal-heading-1 = Remover chave de recuperação de conta?
+rk-remove-modal-content-1 = Caso você redefina sua senha, não poderá usar sua chave de recuperação de conta para acessar seus dados. Esta ação não pode ser desfeita.
+rk-remove-error-2 = Não foi possível remover a chave de recuperação da sua conta
+# Icon button to delete user's account recovery key. Text appears in tooltip on hover and as alt text for screen readers.
+unit-row-recovery-key-delete-icon-button-title = Excluir chave de recuperação de conta
+
+## Secondary email sub-section on main Settings page
+
+se-heading = Email secundário
+    .header = Email secundário
+se-cannot-refresh-email = Desculpe, houve um problema ao atualizar esse email.
+se-cannot-resend-code-3 = Desculpe, houve um problema ao reenviar o código de confirmação
+# This string is used in a notification message near the top of the page.
+# Variables:
+#   $email (String) - the user's email address, which does not need translation.
+se-set-primary-successful-2 = { $email } agora é seu email principal
+se-set-primary-error-2 = Desculpe, houve um problema ao alterar seu email principal
+# This string is used in a notification message near the top of the page.
+# Variables:
+#   $email (String) - the user's email address, which does not need translation.
+se-delete-email-successful-2 = { $email } excluído com sucesso
+se-delete-email-error-2 = Desculpe, houve um problema ao excluir este email
+se-verify-session-3 = Você precisa confirmar a sessão atual para realizar esta ação
+se-verify-session-error-3 = Desculpe, houve um problema ao confirmar a sessão
+# Button to remove the secondary email
+se-remove-email =
+    .title = Remover email
+# Button to refresh secondary email status
+se-refresh-email =
+    .title = Atualizar email
+se-unverified-2 = não confirmado
+se-resend-code-2 = Confirmação necessária. <button>Reenvie o código de verificação</button>, se ele não estiver na sua caixa de entrada ou pasta de spam.
+# Button to make secondary email the primary
+se-make-primary = Tornar principal
+se-default-content = Acesse sua conta se você não conseguir entrar no seu email principal.
+se-content-note-1 = Nota: Usar um email secundário não restaura suas informações, você precisa de uma <a>chave de recuperação de conta</a> para isso.
+# Default value for the secondary email
+se-secondary-email-none = Nenhum
+
+##
+
+
+## Two Step Auth sub-section on Settings main page
+
+tfa-row-header = Autenticação em duas etapas
+tfa-row-disabled-2 = Autenticação em duas etapas desativada
+tfa-row-enabled = Ativada
+tfa-row-not-set = Não configurada
+tfa-row-action-add = Adicionar
+tfa-row-action-disable = Desativar
+tfa-row-button-refresh =
+    .title = Atualizar autenticação em duas etapas
+tfa-row-cannot-refresh = Desculpe, houve um problema ao atualizar a autenticação em duas etapas.
+tfa-row-content-explain = Impeça que outras pessoas entrem na sua conta, exigindo um código único ao qual só você tem acesso.
+tfa-row-cannot-verify-session-4 = Desculpe, houve um problema ao confirmar a sessão
+tfa-row-disable-modal-heading = Desativar autenticação em duas etapas?
+tfa-row-disable-modal-confirm = Desativar
+tfa-row-disable-modal-explain-1 = Esta ação não pode ser desfeita. Você também tem a opção de <linkExternal>substituir seus códigos de autenticação de backup</linkExternal>.
+tfa-row-cannot-disable-2 = Não foi possível desativar a autenticação em duas etapas
+tfa-row-change-modal-heading-1 = Alterar códigos de autenticação de backup?
+tfa-row-change-modal-confirm = Alterar
+tfa-row-change-modal-explain = Você não poderá desfazer esta ação.
+
+## TermsPrivacyAgreement
+## These terms are used in signin and signup for Firefox account
+
+# This message is followed by a bulleted list
+terms-privacy-agreement-intro-2 = Ao prosseguir, você concorda com os:
+# links to Pocket's Terms of Service and Privacy Notice, part of a bulleted list
+terms-privacy-agreement-pocket-2 = <pocketTos>Termos do serviço</pocketTos> e <pocketPrivacy>Aviso de privacidade</pocketPrivacy> do { -product-pocket }
+# link to Monitor's Terms of Service and Privacy Notice, part of a bulleted list
+terms-privacy-agreement-monitor-3 = Serviços de assinatura <mozSubscriptionTosLink>Termos do serviço</mozSubscriptionTosLink> e <mozSubscriptionPrivacyLink>Aviso de privacidade</mozSubscriptionPrivacyLink> da { -brand-mozilla }
+# links to Mozilla Accounts Terms of Service and Privacy Notice, part of a bulleted list
+terms-privacy-agreement-mozilla = <mozillaAccountsTos>Termos do serviço</mozillaAccountsTos> e <mozillaAccountsPrivacy>Aviso de privacidade</mozillaAccountsPrivacy> das { -product-mozilla-accounts }
+# links to Mozilla Account's Terms of Service and Privacy Notice
+terms-privacy-agreement-default-2 = Ao prosseguir, você concorda com os <mozillaAccountsTos>Termos do serviço</mozillaAccountsTos> e <mozillaAccountsPrivacy>Aviso de privacidade</mozillaAccountsPrivacy>.
+
+## ThirdPartyAuth component
+## This is a component that is used to display a list of third party providers (Apple, Google, etc.)
+
+# This appears when a user has the option to authenticate via third party accounts in addition to their Firefox account. 
+# Firefox account login appears on top, and third party options appear on bottom. 
+# This string appears as a separation between the two, in the following order: "Enter your password" "Or"(this string) "Continue with Google"(continue-with-google-button) / "Continue with Apple"(continue-with-apple-button)
+third-party-auth-options-or = ou
+continue-with-google-button = Continue com { -brand-google }
+continue-with-apple-button = Continue com { -brand-apple }
+
+## TotpInputGroup component
+## This component is composed of 6 or 8 single digit inputs for verification codes
+
+# Screen reader only label for each single-digit input, e.g., Code digit 1 of 6
+# $inputNumber is a number from 1 to 8
+# $codeLength is a number, it represents the total length of the code
+single-char-input-label = Dígito { $inputNumber } de { $codeLength }
+
+## Auth-server based errors that originate from backend service
+
+auth-error-102 = Conta desconhecida
+auth-error-103 = Senha incorreta
+auth-error-105-2 = Código de confirmação inválido
+auth-error-110 = Token inválido
+# Error shown to users when they have attempted a request (e.g., requesting a password reset) too many times
+# and their requests have been throttled, but the specific amount of time before they can retry is unknown.
+auth-error-114-generic = Você já tentou vezes demais. Tente novamente mais tarde.
+# This string is the amount of time required before a user can attempt another request.
+# Variables:
+#   $retryAfter (String) - Time required before retrying a request. The variable is localized by our
+#                          formatting library (momentjs) as a "time from now" and automatically includes
+#                          the prefix as required by the current locale (for example, "in 15 minutes", "dans 15 minutes").
+auth-error-114 = Você já tentou vezes demais. Tente novamente { $retryAfter }.
+auth-error-138-2 = Sessão não confirmada
+auth-error-139 = O email secundário deve ser diferente do email da sua conta
+auth-error-155 = Token TOTP não encontrado
+auth-error-159 = Chave de recuperação de conta inválida
+auth-error-183-2 = Código de confirmação inválido ou vencido
+auth-error-999 = Erro não esperado
+auth-error-1001 = Tentativa de acesso cancelada
+auth-error-1002 = A sessão expirou. Entre novamente para continuar.
+auth-error-1003 = Armazenamento local ou cookies ainda estão desativados
+auth-error-1008 = Sua nova senha deve ser diferente
+auth-error-1010 = É necessário uma senha válida
+auth-error-1011 = É necessário um email válido
+auth-error-1031 = É necessário informar sua idade para se cadastrar
+auth-error-1032 = É necessário informar uma idade válida para se cadastrar
+auth-error-1062 = Redirecionamento inválido
+oauth-error-1000 = Algo deu errado. Feche esta aba e tente novamente.
+
+## Cannot Create Account page
+## Users are redirected to this page if they attempt to create an account that does not meet age requirements.
+
+cannot-create-account-header = Não foi possível criar conta
+cannot-create-account-requirements-2 = Você deve atender a certos requisitos de idade para criar uma { -product-mozilla-account }.
+# For an external link: https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy
+cannot-create-account-learn-more-link = Saiba mais
+
+## Connect Another Device page
+
+# A user will only see this header if they are signed in. The header will be preceded by a green checkmark (rtl/ltr sensitive)
+connect-another-device-signed-in-header = Você está conectado neste { -brand-firefox }
+# A "success" message visible to users who verified via email
+connect-another-device-email-confirmed-banner = Email confirmado
+# A "success" message visible to users who verified via sign-in
+connect-another-device-signin-confirmed-banner = Acesso confirmado
+# A message prompts the user to sign in to this instance of the Firefox browser so as to complete device sync. This is followed by a link labeled "Sign in"
+connect-another-device-signin-to-complete-message = Entre na sua conta neste { -brand-firefox } para concluir a configuração
+# A link for the user to sign in to the current Firefox browser, preceded by a message prompting the user to sign in so as to complete the device sync setup
+connect-another-device-signin-link = Entrar
+# A message prompting the user to sign in via a different device than the current one so as to complete the device-syncing process
+connect-another-device-still-adding-devices-message = Ainda adicionando dispositivos? Entre na sua conta no { -brand-firefox } em outro dispositivo para concluir a configuração
+# A message prompting the user to sign in via a different device than the current one so as to complete the device-syncing process
+connect-another-device-signin-another-device-to-complete-message = Entre na sua conta no { -brand-firefox } em outro dispositivo para concluir a configuração
+# This message is a value-proposition prompting the user to sync another device so as to get tabs, bookmarks, and passwords shared between devices
+connect-another-device-get-data-on-another-device-message = Quer ter suas abas, favoritos e senhas em outro dispositivo?
+# This link leads the user back to the `/pair` page so as to connect another device
+connect-another-device-cad-link = Conectar outro dispositivo
+# This link cancels the process of connecting another device, and takes the user back to Account Settings
+connect-another-device-not-now-link = Agora não
+# This is a message for Firefox Android users, prompting them to complete the process of connecting another device by signing into Firefox for Android
+connect-another-device-android-complete-setup-message = Entre na sua conta no { -brand-firefox } para Android para concluir a configuração
+# This is a message for Firefox iOS users, prompting them to complete the process of connecting another device by signing into Firefox for iOS
+connect-another-device-ios-complete-setup-message = Entre na sua conta no { -brand-firefox } para iOS para concluir a configuração
+
+## Cookies disabled page
+## Users will see this page if they have local storage or cookies disabled.
+
+cookies-disabled-header = É necessário armazenamento local e cookies
+cookies-disabled-enable-prompt-2 = Ative cookies e armazenamento local em seu navegador para acessar sua { -product-mozilla-account }. Fazer isso ativa funcionalidades como lembrar de você entre sessões.
+# A button users may click to check if cookies and local storage are enabled and be directed to the previous page if so.
+cookies-disabled-button-try-again = Tentar novamente
+# An external link going to: https://support.mozilla.org/kb/cookies-information-websites-store-on-your-computer
+cookies-disabled-learn-more = Saiba mais
+
+## Index / home page
+
+index-header = Insira seu email
+index-sync-header = Continuar para sua { -product-mozilla-account }
+index-sync-subheader = Sincronize suas senhas, abas e favoritos onde quer que use o { -brand-firefox }.
+# $serviceName - the service (e.g., Pontoon) that the user is signing into with a Mozilla account
+index-subheader-with-servicename = Continuar para { $serviceName }
+index-subheader-with-logo = Continuar para <span>{ $serviceLogo }</span>
+index-subheader-default = Continuar para as configurações da conta
+index-cta = Entrar na sua conta ou criar uma
+index-account-info = Uma { -product-mozilla-account } também libera acesso a mais produtos de proteção de privacidade da { -brand-mozilla }.
+index-email-input =
+    .label = Insira seu email
+
+## InlineRecoverySetup page
+## When users are creating an account, they may get pushed to setup 2FA
+## in this case, they will encounter this page in the signup process (hence calling it "Inline)
+
+# Strings within the <span> elements appear as a subheading.
+# If more appropriate in a locale, the string within the <span>, "to continue to account settings" can stand alone as "Continue to account settings"
+inline-recovery-setup-header-default = Confirme o código de autenticação de backup <span>para continuar para as configurações da conta</span>
+# Strings within the <span> elements appear as a subheading.
+# If more appropriate in a locale, the string within the <span>, "to continue to { $serviceName }" can stand alone as "Continue to { $serviceName }"
+# $serviceName - the name of the service which is using Mozilla accounts to authenticate
+inline-recovery-setup-header = Salve os códigos de autenticação de backup <span>para continuar para o { $serviceName }</span>
+# Message refers to the recovery codes depicted below in the view
+inline-recovery-setup-message = Armazene esses códigos de uso único em um local seguro para quando você não estiver com seu dispositivo móvel.
+# This button allows a user to copy their recovery codes to their clipboard
+# This button allows the user to cancel setup of two-factor authentication for their account
+inline-recovery-cancel-button = Cancelar
+# This button allows the user to proceed to the next step in setting up two-factor authentication for their account
+inline-recovery-continue-button = Continuar
+# This button allows user to verify one of their recovery codes to show they downloaded them
+inline-recovery-confirm-button = Confirmar
+inline-recovery-back-link = Voltar
+inline-recovery-cancel-setup = Cancelar configuração
+# Label describing a text input where the user can enter one of their new authentication codes to prove they downloaded them
+inline-recovery-backup-authentication-code = Código de autenticação de backup
+inline-recovery-confirmation-description = Para garantir que você poderá recuperar o acesso à sua conta, no caso de perda de um dispositivo, digite um dos seus códigos de autenticação de backup salvos.
+# Strings within the <span> elements appear as a subheading.
+# If more appropriate in a locale, the string within the <span>, "to continue to account settings" can stand alone as "Continue to account settings"
+inline-recovery-confirmation-header-default = Confirme o código de autenticação de backup <span>para continuar para as configurações da conta</span>
+# Strings within the <span> elements appear as a subheading.
+# If more appropriate in a locale, the string within the <span>, "to continue to { $serviceName }" can stand alone as "Continue to { $serviceName }"
+# $serviceName - the name of the service which is using Mozilla accounts to authenticate
+inline-recovery-confirmation-header = Confirme o código de autenticação de backup <span>para continuar para o { $serviceName }</span>
+inline-recovery-2fa-enabled = Autenticação em duas etapas ativada
+
+## InlineTotpSetup page
+## TOTP (time-based one-time password) is a form of two-factor authentication (2FA).
+
+inline-totp-setup-cancel-setup-button = Cancelar configuração
+inline-totp-setup-continue-button = Continuar
+# <authenticationAppsLink> links to a list of security apps
+inline-totp-setup-add-security-link = Adicione uma camada de segurança à sua conta, exigindo códigos de autenticação de um <authenticationAppsLink>desses aplicativos de autenticação</authenticationAppsLink>.
+#  The <enable2StepDefaultSpan> elements are just visual separation here
+inline-totp-setup-enable-two-step-authentication-default-header-2 = Ative a autenticação em duas etapas <span>para continuar para as configurações da conta</span>
+# { $serviceName } is the name of the service which the user wants to authenticate to. The <enable2StepCustomServiceSpan> elements are just visual separation
+inline-totp-setup-enable-two-step-authentication-custom-header-2 = Ative a autenticação em duas etapas <span>para continuar para o { $serviceName }</span>
+inline-totp-setup-ready-button = Pronto
+# The authentication code a user is scanning is a QR code.
+# { $serviceName } is the name of the service which the user wants to authenticate to. The <scanAuthCodeHeaderSpan> elements are just visual separation
+inline-totp-setup-show-qr-custom-service-header-2 = Aponte a câmera para o código de autenticação <span>para continuar para o { $serviceName }</span>
+# { $serviceName } is the name of the service which the user wants to authenticate to. The <enterCodeManuallyHeaderSpan> elements are just visual separation
+inline-totp-setup-no-qr-custom-service-header-2 = Digite o código manualmente <span>para continuar para o { $serviceName }</span>
+# The authentication code a user is scanning is a QR code.
+# The <scanAuthHeaderSpan> elements are just visual separation
+inline-totp-setup-show-qr-default-service-header-2 = Aponte a câmera para o código de autenticação <span>para continuar para as configurações da conta</span>
+# The <enterCodeManuallyHeaderSpan> elements are just visual separation
+inline-totp-setup-no-qr-default-service-header-2 = Digite o código manualmente <span>para continuar para as configurações da conta</span>
+# The <toggleToQRButton> allows the user to use a QR code instead of manually entering a secret key
+inline-totp-setup-enter-key-or-use-qr-instructions = Digite esta chave secreta em seu aplicativo de autenticação. <toggleToQRButton>Prefere capturar o código QR?</toggleToQRButton>
+# The <toggleToManualModeButton> allows the user to manually enter a secret key instead of scanning a QR code
+inline-totp-setup-use-qr-or-enter-key-instructions = Capture o código QR em seu aplicativo de autenticação, depois digite o código de autenticação que ele fornecer. <toggleToManualModeButton>Não consegue capturar o código?</toggleToManualModeButton>
+# The "authentication code" here refers to the code provided by an authentication app.
+inline-totp-setup-on-completion-description = Após concluir, ele começa a gerar códigos de autenticação para você digitar.
+# The "authentication code" here refers to the code provided by an authentication app.
+inline-totp-setup-security-code-placeholder = Código de autenticação
+# The "authentication code" here refers to the code provided by an authentication app.
+inline-totp-setup-code-required-error = Necessário código de autenticação
+tfa-qr-code-alt = Use o código { $code } para configurar a autenticação em duas etapas em aplicativos suportados.
+
+## Legal page. This page contains simply a header and links to pages that display
+## content from https://github.com/mozilla/legal-docs
+
+legal-header = Jurídico
+# Links to our internal "Firefox Cloud" /legal/terms page
+legal-terms-of-service-link = Termos do serviço
+# Links to our internal "Firefox Cloud" /legal/terms page
+legal-privacy-link = Política de privacidade
+
+## Legal privacy notice page. Most content comes from https://github.com/mozilla/legal-docs
+
+legal-privacy-heading = Aviso de privacidade
+
+## Legal terms of service page. Most content comes from https://github.com/mozilla/legal-docs
+
+legal-terms-heading = Termos do serviço
+
+## AuthAllow page - Part of the device pairing flow
+
+pair-auth-allow-heading-text = Você acabou de entrar na sua conta no { -product-firefox }?
+# Submit button to confirm that the user initiated the device pairing
+# and that they approve of the new device being added to their account
+pair-auth-allow-confirm-button = Sim, aprovar dispositivo
+# "If this wasn't you" means "If it wasn't you that just signed in to Firefox"
+# The text with the <link> tags links to a `reset password` page
+pair-auth-allow-refuse-device-link = Se não foi você, <link>mude sua senha</link>
+
+## PairAuthComplete page - part of the device pairing flow
+
+# Heading to confirm the successful pairing of a new device with the user's account
+# Device here is non specific (could be a laptop, tablet, phone, etc.)
+pair-auth-complete-heading = Dispositivo conectado
+# Variable { $deviceFamily } is generally a browser name, for example "Firefox"
+# Variable { $deviceOS } is an operating system short name, for example "iOS", "Android"
+pair-auth-complete-now-syncing-device-text = Agora você está sincronizando com: { $deviceFamily } em { $deviceOS }
+pair-auth-complete-sync-benefits-text = Agora você pode acessar suas abas abertas, senhas e favoritos em todos os seus dispositivos.
+pair-auth-complete-see-tabs-button = Veja abas de dispositivos sincronizados
+pair-auth-complete-manage-devices-link = Gerenciar dispositivos
+
+## AuthTotp page
+## TOTP (time-based one-time password) is a form of two-factor authentication (2FA).
+## Users that have set up two-factor authentication land on this page during device pairing.
+
+# String within the <span> element appears on a separate line
+# If more appropriate in a locale, the string within the <span>, "to continue to account settings" can stand alone as "Continue to account settings"
+auth-totp-heading-w-default-service = Digite o código de autenticação <span>para continuar para as configurações da conta</span>
+# String within the <span> element appears on a separate line
+# If more appropriate in a locale, the string within the <span>, "to continue to { $serviceName }" can stand alone as "Continue to { $serviceName }"
+# { $serviceName } represents a product name (e.g., Mozilla VPN) that will be passed in as a variable
+auth-totp-heading-w-custom-service = Digite o código de autenticação <span>para continuar para o { $serviceName }</span>
+auth-totp-instruction = Abra seu aplicativo de autenticação e digite o código de autenticação que ele fornecer.
+auth-totp-input-label = Digite o código de 6 dígitos
+# Form button to confirm if the authentication code entered by the user is valid
+auth-totp-confirm-button = Confirmar
+# Error displayed in a tooltip when the form is submitted without a code
+auth-totp-code-required-error = Necessário código de autenticação
+
+## WaitForSupp page - Part of the devide pairing flow
+## Users see this page when they have started to pair a second (or more) device to their account
+## The pairing must be approved from both devices to succeed
+
+# The "other device" is non-specific and could be a desktop computer, laptop, tablet, mobile phone, etc.
+# Strings within the <span> elements appear as a subheading.
+pair-wait-for-supp-heading-text = Agora é exigida aprovação <span>de seu outro dispositivo</span>
+
+## PairFailure - a view which displays on failure of the device pairing process
+
+pair-failure-header = Pareamento não concluído
+pair-failure-message = O processo de configuração foi interrompido.
+
+## Pair index page
+
+pair-sync-header = Sincronize o { -brand-firefox } em seu celular ou tablet
+pair-cad-header = Conecte o { -brand-firefox } em outro dispositivo
+pair-already-have-firefox-paragraph = Já tem o { -brand-firefox } em um celular ou tablet?
+# Clicking this button initiates the pairing process, usually by directing the user to the `about:preferences` page in Firefox
+pair-sync-your-device-button = Sincronize seu dispositivo
+# This is a heading element immediately preceded by "Sync your device" and followed by a link and QR code to download Firefox
+pair-or-download-subheader = Ou baixe
+# Directs user to scan a QR code to download Firefox. <linkExternal> is an anchor tag that directs the user to where they can download the { -brand-firefox } app
+pair-scan-to-download-message = Aponte a câmera para o código para baixar o { -brand-firefox } para dispositivos móveis ou envie para si mesmo um <linkExternal>link de download</linkExternal>.
+# This allows the user to exit the sync/pair flow, and redirects them back to Settings
+pair-not-now-button = Agora não
+pair-take-your-data-message = Tenha suas abas, favoritos e senhas onde quer que use o { -brand-firefox }.
+# This initiates the pairing process, usually by directing the user to the `about:preferences` page in Firefox
+pair-get-started-button = Introdução
+# This is the aria label on the QR code image
+pair-qr-code-aria-label = Código QR
+
+## PairSuccess - a view which displays  on successful completion of the device pairing process
+
+pair-success-header-2 = Dispositivo conectado
+pair-success-message-2 = Pareamento bem-sucedido.
+
+## SuppAllow page - Part of the device pairing flow
+## Users see this page when they have started to pair a second (or more) device to their account
+## The pairing must be confirmed from both devices to succeed
+
+# Strings within the <span> elements appear as a subheading.
+# Variable $email is the user's email address
+pair-supp-allow-heading-text = Confirmar pareamento <span>de { $email }</span>
+pair-supp-allow-confirm-button = Confirmar pareamento
+pair-supp-allow-cancel-link = Cancelar
+
+## WaitForAuth page - Part of the devide pairing flow
+## Users see this page when they have started to pair a second (or more) device to their account
+## The pairing must be approved from both devices to succeed
+
+# The "other device" is non-specific and could be a desktop computer, laptop, tablet, mobile phone, etc.
+# Strings within the <span> elements appear as a subheading.
+pair-wait-for-auth-heading-text = Agora precisa aprovar <span>em seu outro dispositivo</span>
+
+## PairUnsupported - a view which is shown when the user tries to scan the pairing QR code any way other than through a Firefox app
+
+pair-unsupported-header = Parear usando um aplicativo
+pair-unsupported-message = Você usou a câmera do sistema? Você deve parear usando um aplicativo { -brand-firefox }.
+
+## ThirdPartyAuthCallback Page
+## This page is called after a user completes the third party authentication flow from Google or Apple.
+
+third-party-auth-callback-message = Aguarde, você está sendo redirecionado para o aplicativo autorizado.
+
+## AccountRecoveryConfirmKey page
+
+# Strings within the <span> elements appear as a subheading.
+# If more appropriate in a locale, the string within the <span>, "to continue to account settings" can stand alone as "Continue to account settings"
+account-recovery-confirm-key-heading-w-default-service = Redefina a senha com a chave de recuperação de conta <span>para seguir para as configurações da conta</span>
+# Strings within the <span> elements appear as a subheading.
+# If more appropriate in a locale, the string within the <span>, "to continue to { $serviceName }" can stand alone as "Continue to { $serviceName }"
+# { $serviceName } represents a product name (e.g., Mozilla VPN) that will be passed in as a variable
+account-recovery-confirm-key-heading-w-custom-service = Redefina a senha com a chave de recuperação de conta <span>para seguir para { $serviceName }</span>
+account-recovery-confirm-key-instructions-2 = Insira a chave de recuperação de conta de uso único que você armazenou em um local seguro para recuperar o acesso à sua { -product-mozilla-account }.
+account-recovery-confirm-key-warning-message = <span>Nota:</span> Se você redefinir sua senha e não tiver salva uma chave de recuperação de conta, alguns dos seus dados serão apagados (incluindo dados sincronizados no servidor, como histórico e favoritos).
+# Prompts the user to enter their account recovery code
+account-recovery-confirm-key-input =
+    .label = Digite a chave de recuperação da conta
+# Clicking this button checks if the recovery key provided by the user is correct and associated with their account
+account-recovery-confirm-key-button = Confirmar chave de recuperação de conta
+# Link that leads to the password reset page (without recovery code)
+account-recovery-lost-recovery-key-link = Não tem uma chave de recuperação de conta?
+
+## Account recovery reset password page
+
+# Header for form to create new password
+create-new-password-header = Criar nova senha
+account-restored-success-message = Você restaurou sua conta com sucesso usando sua chave de recuperação de conta. Mude a senha para proteger seus dados e a armazene em um local seguro.
+# Feedback displayed in alert bar when password reset is successful
+account-recovery-reset-password-success-alert = Senha definida
+# An error case was hit that we cannot account for.
+account-recovery-reset-password-unexpected-error = Encontrado erro não esperado
+account-recovery-reset-password-redirecting = Redirecionando
+
+## CompleteResetPassword component
+## User followed a password reset link and is now prompted to create a new password
+
+complete-reset-pw-header = Criar nova senha
+complete-reset-password-warning-message-2 = <span>Lembre:</span> Ao redefinir sua senha, você redefine sua conta. Você pode perder algumas informações pessoais (inclusive histórico, favoritos e senhas). Isso porque criptografamos seus dados com sua senha para proteger sua privacidade. São mantidas as assinaturas que você tiver. Dados do { -product-pocket } não são afetados.
+# A new password was successfully set for the user's account
+# Displayed in an alert bar
+complete-reset-password-success-alert = Senha definida
+# An error occurred while attempting to set a new password (password reset flow)
+# Displayed in an alert bar
+complete-reset-password-error-alert = Desculpe, houve um problema ao definir sua senha
+complete-reset-password-recovery-key-error-v2 = Desculpe, houve um problema ao verificar se você tem uma chave de recuperação de conta.
+complete-reset-password-recovery-key-link = Redefina a senha com sua chave de recuperação de conta.
+
+## Confirm Reset Password Component
+
+# Second step of password reset flow for Firefox accounts
+# Header confirming that a password reset email has been sent to the user's email address
+confirm-pw-reset-header = Email de redefinição enviado
+# Instructions to continue the password reset process
+# { $email } is the email entered by the user and where the password reset instructions were sent
+confirm-pw-reset-instructions = Clique no link enviado por email para { $email } em até uma hora para criar uma nova senha.
+
+## ResetPassword page
+
+# Strings within the <span> elements appear as a subheading.
+# If more appropriate in a locale, the string within the <span>, "to continue to account settings" can stand alone as "Continue to account settings"
+reset-password-heading-w-default-service = Redefina a senha <span>para continuar para as configurações da conta</span>
+# Strings within the <span> elements appear as a subheading.
+# If more appropriate in a locale, the string within the <span>, "to continue to { $serviceName }" can stand alone as "Continue to { $serviceName }"
+# { $serviceName } represents a product name (e.g., Mozilla VPN) that will be passed in as a variable
+reset-password-heading-w-custom-service = Redefina a senha <span>para continuar para { $serviceName }</span>
+reset-password-warning-message-2 = <span>Nota:</span> Ao redefinir sua senha, você redefine sua conta. Você pode perder algumas informações pessoais (inclusive histórico, favoritos e senhas). Isso porque criptografamos seus dados com sua senha para proteger sua privacidade. São mantidas as assinaturas que você tiver. Dados do { -product-pocket } não são afetados.
+# Users type their email address in this field to start a password reset
+reset-password-password-input =
+    .label = Email
+reset-password-button = Iniciar redefinição
+# Error message displayed in a tooltip when a user attempts to submit a password reset form without entering an email address
+reset-password-email-required-error = Email obrigatório
+reset-password-with-recovery-key-verified-page-title = Senha redefinida com sucesso
+reset-password-with-recovery-key-verified-generate-new-key = Gerar nova chave de recuperação de conta
+reset-password-with-recovery-key-verified-continue-to-account = Continuar para minha conta
+
+## Confirm Reset Password With Code
+
+confirm-reset-password-with-code-heading = Verifique seu email
+# Text within span appears in bold
+# $email - email address for which a password reset was requested
+confirm-reset-password-with-code-instruction = Enviamos um código de confirmação para <span>{ $email }</span>.
+# Shown above a group of 8 single-digit input boxes
+# Only numbers allowed
+confirm-reset-password-code-input-group-label = Digite o código de 8 dígitos em até 10 minutos
+# Clicking the button submits and verifies the code
+# If succesful, continues to the next step of the password reset
+confirm-reset-password-otp-submit-button = Avançar
+# Button to request a new reset password confirmation code
+confirm-reset-password-otp-resend-code-button = Reenviar código
+# Link to cancel the password reset and sign in with a different account
+confirm-reset-password-otp-different-account-link = Usar outra conta
+
+## ResetPassword start page
+
+password-reset-flow-heading = Redefina sua senha
+password-reset-body = Digite seu email e enviaremos um código de confirmação para verificar que é realmente você.
+password-reset-email-input =
+    .label = Insira seu email
+password-reset-submit-button = Me envie instruções de redefinição
+
+## CompleteSignin component
+
+# This is a label that precedes any error which could arise from trying to validate the user's signin
+error-label = Erro:
+# This is a message that is shown to users along with a "Loading" spinner while the site tries to check their signin
+validating-signin = Validando acesso…
+# Shown above an error banner (e.g., invalid confirmation code, unexpected error)
+complete-signin-error-header = Erro de confirmação
+# The user followed a signin confirmation link, but that link is expired and no longer valid
+signin-link-expired-header = O link de confirmação expirou
+signin-link-expired-message-2 = O link que você clicou expirou ou já foi usado.
+
+## Signin page
+
+# Strings within the <span> elements appear as a subheading.
+signin-password-needed-header-2 = Digite a senha <span>da sua { -product-mozilla-account }</span>
+# $serviceLogo - an image of the logo of the service which the user is authenticating for.
+# For languages structured like English, the phrase can read "to continue to"
+signin-subheader-with-logo = Continuar para <span>{ $serviceLogo }</span>
+# $serviceName - the name of the service which the user authenticating for
+# For languages structured like English, the phrase can read "to continue to { $serviceName }"
+signin-subheader-without-logo-with-servicename = Continuar para { $serviceName }
+signin-subheader-without-logo-default = Continuar para as configurações da conta
+signin-button = Entrar
+signin-header = Entrar
+signin-use-a-different-account-link = Usar outra conta
+signin-forgot-password-link = Esqueceu a senha?
+signin-password-button-label = Senha
+
+## ReportSignin Page
+## When users receive an "Is this you signing in?" email with an unblock code,
+## they can click "report it to us" if they did not attempt to sign in.
+## This will be the page shown to users to block the sign in and report it.
+
+report-signin-link-damaged-body = O link que você clicou tem caracteres faltando. Pode ter sido corrompido pelo seu cliente de email. Copie o endereço com cuidado e tente novamente.
+report-signin-header = Denunciar acesso não autorizado?
+report-signin-body = Você recebeu um email de tentativa de acesso à sua conta. Quer denunciar esta atividade como suspeita?
+report-signin-submit-button = Denunciar atividade
+report-signin-support-link = Por que isso está acontecendo?
+report-signin-error = Desculpe, houve um problema ao enviar a denúncia.
+signin-bounced-header = Desculpe. Bloqueamos a sua conta.
+# $email (string) - The user's email.
+signin-bounced-message = O email de confirmação que enviamos para { $email } retornou e bloqueamos sua conta para proteger seus dados do { -brand-firefox }.
+# linkExternal is button which logs the user's action and navigates them to mozilla support
+signin-bounced-help = Se este for um endereço de email válido, <linkExternal>avise-nos</linkExternal> e poderemos ajudar a desbloquear sua conta.
+signin-bounced-create-new-account = Não tem mais este email? Crie outra conta
+back = Voltar
+
+## SigninRecoveryCode page
+## Users are prompted to enter a backup authentication code
+## (provided to the user when they first set up two-step authentication)
+## when they are unable to sign in with two-step authentication (e.g., Authy, Duo, etc.)
+
+# String within the <span> element appears on a separate line
+# If more appropriate in a locale, the string within the <span>, "to continue to account settings" can stand alone as "Continue to account settings"
+signin-recovery-code-heading-w-default-service = Digite o código de autenticação de backup <span>para continuar para as configurações da conta</span>
+# String within the <span> element appears on a separate line
+# If more appropriate in a locale, the string within the <span>, "to continue to { $serviceName }" can stand alone as "Continue to { $serviceName }"
+# { $serviceName } represents a product name (e.g., Mozilla VPN) that will be passed in as a variable
+signin-recovery-code-heading-w-custom-service = Digite o código de autenticação de backup <span>para continuar para o { $serviceName }</span>
+signin-recovery-code-instruction = Digite o código de autenticação de backup fornecido durante a configuração da autenticação em duas etapas.
+signin-recovery-code-input-label = Digite o código de autenticação de backup de 10 dígitos
+# Form button to confirm if the backup authentication code entered by the user is valid
+signin-recovery-code-confirm-button = Confirmar
+# Link to return to signin with two-step authentication code
+signin-recovery-code-back-link = Voltar
+# External link for support if the user can't use two-step autentication or a backup authentication code
+# https://support.mozilla.org/kb/what-if-im-locked-out-two-step-authentication
+signin-recovery-code-support-link = Sua conta está bloqueada?
+# Error displayed in a tooltip when form is submitted witout a code
+signin-recovery-code-required-error = Necessário código de autenticação de backup
+
+## Signin reported page: this page is shown when a user receives an email notifying them of a new account signin, and the user clicks a button indicating that the signin was not them so that we know it was someone trying to break into their account.
+
+signin-reported-header = Obrigado por sua vigilância
+signin-reported-message = Nossa equipe foi notificada. Relatos como este nos ajudam a evitar intrusos.
+
+## SigninTokenCode page
+## Users see this page during the signin process. In this instance, the confirmation code is
+## a 6-digit code that is sent to the user's email address.
+
+# String within the <span> element appears on a separate line
+# If more appropriate in a locale, the string within the <span>, "for your { -product-mozilla-account }"
+# can stand alone as "{ -product-mozilla-account }"
+signin-token-code-heading-2 = Digite o código de confirmação<span> da sua { -product-mozilla-account }</span>
+# { $email } represents the email that the user entered to sign in
+signin-token-code-instruction = Digite o código enviado para { $email } em até 5 minutos.
+signin-token-code-input-label-v2 = Digite o código de 6 dígitos
+# Form button to confirm if the confirmation code entered by the user is valid
+signin-token-code-confirm-button = Confirmar
+signin-token-code-code-expired = O código expirou?
+# Link to resend a new code to the user's email.
+signin-token-code-resend-code-link = Enviar novo código por email.
+# Error displayed in a tooltip when the form is submitted without a code
+signin-token-code-required-error = Necessário código de confirmação
+
+## SigninTOTPCode page
+## TOTP (time-based one-time password) is a form of two-factor authentication (2FA).
+## Users that have set up two-factor authentication land on this page during sign-in.
+
+# String within the <span> element appears on a separate line
+# If more appropriate in a locale, the string within the <span>, "to continue to account settings" can stand alone as "Continue to account settings"
+signin-totp-code-heading-w-default-service-v2 = Digite o código de autenticação <span>para continuar para as configurações da conta</span>
+# String within the <span> element appears on a separate line
+# If more appropriate in a locale, the string within the <span>, "to continue to { $serviceName }" can stand alone as "Continue to { $serviceName }"
+# { $serviceName } represents a product name (e.g., Mozilla VPN) that will be passed in as a variable
+signin-totp-code-heading-w-custom-service-v2 = Digite o código de autenticação <span>para continuar para o { $serviceName }</span>
+signin-totp-code-instruction-v2 = Abra seu aplicativo de autenticação e digite o código de autenticação que ele fornecer.
+signin-totp-code-input-label-v2 = Digite o código de 6 dígitos
+# Form button to confirm if the authentication code entered by the user is valid
+signin-totp-code-confirm-button = Confirmar
+signin-totp-code-other-account-link = Usar outra conta
+signin-totp-code-recovery-code-link = Problemas ao inserir o código?
+# Error displayed in a tooltip when the form is submitted without a code
+signin-totp-code-required-error = Necessário código de autenticação
+
+## Signin Unblock Page
+## Page shown when signin has been blocked by rate limiting (too many requests)
+
+signin-unblock-header = Autorizar este acesso
+# Where $email is the email address entered for the sign-in attempt
+signin-unblock-body = Verifique se recebeu email com código de autorização, enviado para { $email }.
+signin-unblock-code-input = Digite o código de autorização
+signin-unblock-submit-button = Avançar
+# Shown when the user attempts to submit the form without including a code
+signin-unblock-code-required-error = Necessário código de autorização
+signin-unblock-code-incorrect-length = O código de autorização deve ter 8 caracteres
+signin-unblock-code-incorrect-format-2 = O código de autorização só pode conter letras e/ou números
+signin-unblock-resend-code-button = Não chegou em sua caixa de entrada ou pasta de spam? Reenviar
+signin-unblock-support-link = Por que isso está acontecendo?
+
+## ConfirmSignupCode page
+## Users see this page after they have initiated account sign up,
+
+
+# and a confirmation code has been sent to their email address.
+
+# Page title show in browser title bar or page tab
+confirm-signup-code-page-title = Digite o código de confirmação
+# String within the <span> element appears on a separate line
+# If more appropriate in a locale, the string within the <span>, "for your { -product-mozilla-account }"
+# can stand alone as "{ -product-mozilla-account }"
+confirm-signup-code-heading-2 = Digite o código de confirmação <span>da sua { -product-mozilla-account }</span>
+# { $email } represents the email that the user entered to sign in
+confirm-signup-code-instruction = Digite o código enviado para { $email } em até 5 minutos.
+confirm-signup-code-input-label = Digite o código de 6 dígitos
+# Form button to confirm if the confirmation code entered by the user is valid
+confirm-signup-code-confirm-button = Confirmar
+confirm-signup-code-code-expired = O código expirou?
+# Link to resend a new code to the user's email.
+confirm-signup-code-resend-code-link = Enviar novo código por email.
+confirm-signup-code-success-alert = Conta confirmada com sucesso
+# Error displayed in tooltip.
+confirm-signup-code-is-required-error = O código de confirmação é obrigatório
+
+## Account Signup page
+## This is the second page of the sign up flow, users have already entered their email
+
+signup-heading = Defina sua senha
+# This text is displayed in a dismissible info banner and is only displayed to Pocket clients
+# <LinkExternal> leads to https://support.mozilla.org/kb/pocket-firefox-account-migration
+signup-info-banner-for-pocket = Por que preciso criar esta conta? <LinkExternal>Descubra aqui</LinkExternal>
+# Clicking on this link returns the user to the beginning of the flow so they can enter a new email address
+signup-change-email-link = Alterar email
+# Checking the user's age is required by COPPA. To register for an account, the user must indicate their age (number only)
+signup-age-check-label =
+    .label = Qual é a sua idade?
+# Link goes to https://www.ftc.gov/business-guidance/resources/childrens-online-privacy-protection-rule-not-just-kids-sites
+# This link appears just below signup-age-check-input-label
+signup-coppa-check-explanation-link = Por que perguntamos?
+;��&           f���GVQ]f� ^   q    O^partitionKey=%28https%2Cfirefox.com%29,a,:https://cdn.accounts.firefox.com/settings/prod/locales/pt-BR/main.ftl strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 
+x-goog-generation: 1725475097232633
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 94465
+x-goog-hash: crc32c=ZnaJkA==, md5=rANN9D2ikXQOIMxzT/EskQ==
+x-goog-storage-class: STANDARD
+accept-ranges: bytes
+content-length: 94465
+access-control-allow-origin: *
+x-guploader-uploadid: AD-8ljvoeAW4DFgb6U_A0tROKK6aKhii-RPkedUr8V8B_KL4oPtZZW92ekPvUto66xipZ8zzTmnkOypyag
+access-control-expose-headers: Content-Length, Date, Server, Transfer-Encoding, X-GUploader-UploadID, X-Google-Trace
+server: UploadServer
+date: Tue, 17 Sep 2024 18:47:58 GMT
+expires: Wed, 18 Sep 2024 18:47:58 GMT
+cache-control: public,max-age=86400
+age: 75188
+last-modified: Wed, 11 Sep 2024 18:52:47 GMT
+etag: "ac034df43da291740e20cc734ff12c91"
+content-type: application/octet-stream
+alt-svc: clear
+X-Firefox-Spdy: h2
+ original-response-headers x-goog-generation: 1725475097232633
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 94465
+x-goog-hash: crc32c=ZnaJkA==
+x-goog-hash: md5=rANN9D2ikXQOIMxzT/EskQ==
+x-goog-storage-class: STANDARD
+accept-ranges: bytes
+content-length: 94465
+access-control-allow-origin: *
+x-guploader-uploadid: AD-8ljvoeAW4DFgb6U_A0tROKK6aKhii-RPkedUr8V8B_KL4oPtZZW92ekPvUto66xipZ8zzTmnkOypyag
+access-control-expose-headers: Content-Length, Date, Server, Transfer-Encoding, X-GUploader-UploadID, X-Google-Trace
+server: UploadServer
+date: Tue, 17 Sep 2024 18:47:58 GMT
+expires: Wed, 18 Sep 2024 18:47:58 GMT
+cache-control: public,max-age=86400
+age: 75188
+last-modified: Wed, 11 Sep 2024 18:52:47 GMT
+etag: "ac034df43da291740e20cc734ff12c91"
+content-type: application/octet-stream
+alt-svc: clear
+X-Firefox-Spdy: h2
+ ctid 1 net-response-time-onstart 70 net-response-time-onstop 70  q

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/leandrogsrosa/Downloads/IMG_20240914_130136.jpg" added="2024-09-17T02:43:50.175015Z" modified="2024-09-18T14:05:00.066484Z" visited="2024-09-17T02:43:50.175016Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2024-09-17T02:44:15.037818Z" count="4"/>
+          <bookmark:application name="Fotos" exec="&apos;org.gnome.Photos %u&apos;" modified="2024-09-18T14:05:00.066480Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/leandrogsrosa/Downloads/IMG_20240914_101934.jpg" added="2024-09-17T02:44:02.411445Z" modified="2024-09-18T14:04:55.837477Z" visited="2024-09-17T02:44:02.411447Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2024-09-17T02:44:12.558634Z" count="3"/>
+          <bookmark:application name="Fotos" exec="&apos;org.gnome.Photos %u&apos;" modified="2024-09-18T14:04:55.837474Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/leandrogsrosa/Downloads/code_1.93.1-1726079302_amd64.deb" added="2024-09-18T14:34:37.321427Z" modified="2024-09-18T14:36:27.296457Z" visited="2024-09-18T14:34:37.321429Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-18T14:34:37.321432Z" count="1"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;zorin-exec-guard-linux %f&apos;" modified="2024-09-18T14:36:27.296453Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/leandrogsrosa/Documentos/PROJETOS%20TESTES/Snake.py" added="2024-09-19T01:34:30.243531Z" modified="2024-09-19T01:34:30.491843Z" visited="2024-09-19T01:34:30.243533Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;xdg-desktop-portal-gnome %u&apos;" modified="2024-09-19T01:34:30.243535Z" count="1"/>
+          <bookmark:application name="com.visualstudio.code" exec="&apos;gio open %u&apos;" modified="2024-09-19T01:34:30.491834Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/leandrogsrosa/Documentos/PROJETOS%20TESTES/Snake_game.py" added="2024-09-19T01:47:38.678845Z" modified="2024-09-19T01:47:38.927402Z" visited="2024-09-19T01:47:38.678847Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;xdg-desktop-portal-gnome %u&apos;" modified="2024-09-19T01:47:38.678852Z" count="1"/>
+          <bookmark:application name="com.visualstudio.code" exec="&apos;gio open %u&apos;" modified="2024-09-19T01:47:38.927393Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

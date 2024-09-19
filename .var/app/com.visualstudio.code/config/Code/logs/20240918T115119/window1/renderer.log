@@ -1,0 +1,9 @@
+2024-09-18 11:51:21.046 [info] Started local extension host with pid 395.
+2024-09-18 11:51:24.475 [info] [perf] Render performance baseline is 99ms
+2024-09-18 11:58:15.801 [error] [Extension Host] Error: Cancelled
+	at m (/app/extra/vscode/resources/app/extensions/github-authentication/dist/extension.js:1:227915)
+	at async a.GitHubServer.login (/app/extra/vscode/resources/app/extensions/github-authentication/dist/extension.js:1:228478)
+	at async a.GitHubAuthenticationProvider.createSession (/app/extra/vscode/resources/app/extensions/github-authentication/dist/extension.js:1:224482)
+	at async c.$createSession (/app/extra/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:159:61013)
+2024-09-18 12:03:56.058 [info] Settings Sync: Updating due to change in sessions
+2024-09-18 12:03:56.065 [info] Settings Sync: Updating due to change in sessions

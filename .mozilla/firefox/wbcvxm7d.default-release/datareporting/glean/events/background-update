@@ -1,0 +1,4 @@
+{"timestamp":95856,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","glean_timestamp":"1726708579997","experiment":"relay-integration-into-firefox-release-for-all-fxa-users"}}
+{"timestamp":96018,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"add-an-image-to-pdf-with-alt-text-rollout","feature":"addAnImageInPDF","reason":"invalid-feature","glean_timestamp":"1726708580158"}}
+{"timestamp":122389,"category":"nimbus_events","name":"enroll_failed","extra":{"experiment":"relay-integration-into-firefox-release-for-all-fxa-users","glean_timestamp":"1726708606529","reason":"feature-conflict"}}
+{"timestamp":122560,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"add-an-image-to-pdf-with-alt-text-rollout","feature":"addAnImageInPDF","glean_timestamp":"1726708606701","reason":"invalid-feature"}}

@@ -1,0 +1,26 @@
+2024-09-18 11:54:01.881 [info] Getting Manifest... dracula-theme.theme-dracula
+2024-09-18 11:54:01.901 [info] Installing extension: dracula-theme.theme-dracula {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","path":"/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"}}
+2024-09-18 11:54:05.282 [info] Extension signature verification result for dracula-theme.theme-dracula: Success. Executed: true. Duration: 2305ms.
+2024-09-18 11:54:05.408 [info] Extracted extension to file:///home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/dracula-theme.theme-dracula-2.25.1: dracula-theme.theme-dracula
+2024-09-18 11:54:05.417 [info] Renamed to /home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/dracula-theme.theme-dracula-2.25.1
+2024-09-18 11:54:05.453 [info] Extension installed successfully: dracula-theme.theme-dracula vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json
+2024-09-18 11:54:05.527 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp'
+    at o.create (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19406)
+    at u (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19517)
+    at $.hb (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36674)
+    at $.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:29001)
+    at async c.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14931)
+    at async W.ub (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:120356)
+2024-09-18 11:54:28.136 [info] Getting Manifest... rocketseat.theme-omni
+2024-09-18 11:54:28.150 [info] Installing extension: rocketseat.theme-omni {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","path":"/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"}}
+2024-09-18 11:54:30.284 [info] Extension signature verification result for rocketseat.theme-omni: Success. Executed: true. Duration: 1441ms.
+2024-09-18 11:54:30.330 [info] Extracted extension to file:///home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/rocketseat.theme-omni-1.0.12: rocketseat.theme-omni
+2024-09-18 11:54:30.371 [info] Renamed to /home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/rocketseat.theme-omni-1.0.12
+2024-09-18 11:54:30.412 [info] Extension installed successfully: rocketseat.theme-omni vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json
+2024-09-18 11:54:30.473 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp'
+    at o.create (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19406)
+    at u (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19517)
+    at $.hb (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36674)
+    at $.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:29001)
+    at async c.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14931)
+    at async W.ub (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:120356)

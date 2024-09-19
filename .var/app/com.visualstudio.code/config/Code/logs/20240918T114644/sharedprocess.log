@@ -1,0 +1,14 @@
+2024-09-18 11:50:43.171 [info] Getting Manifest... ms-ceintl.vscode-language-pack-pt-br
+2024-09-18 11:50:43.229 [info] Installing extension: ms-ceintl.vscode-language-pack-pt-br {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","path":"/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":true,"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"}}
+2024-09-18 11:50:46.170 [info] Extension signature verification result for ms-ceintl.vscode-language-pack-pt-br: Success. Executed: true. Duration: 2111ms.
+2024-09-18 11:50:46.504 [info] Extracted extension to file:///home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.93.2024091109: ms-ceintl.vscode-language-pack-pt-br
+2024-09-18 11:50:46.512 [info] Renamed to /home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.93.2024091109
+2024-09-18 11:50:46.540 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-pt-br
+2024-09-18 11:50:46.605 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json.vsctmp'
+    at o.create (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19406)
+    at u (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19517)
+    at $.hb (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36674)
+    at $.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:29001)
+    at async c.stat (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14931)
+    at async W.ub (/app/extra/vscode/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:120356)
+2024-09-18 11:50:46.610 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-pt-br vscode-userdata:/home/leandrogsrosa/.var/app/com.visualstudio.code/data/vscode/extensions/extensions.json

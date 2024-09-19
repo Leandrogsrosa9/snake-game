@@ -1,0 +1,14 @@
+2024-09-18 22:25:29.886 [info] Started local extension host with pid 132.
+2024-09-18 22:25:33.160 [info] [perf] Render performance baseline is 70ms
+2024-09-18 22:37:06.900 [error] Invalid debug adapter: Error: Invalid debug adapter
+    at u.p (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1877:95)
+    at u.$acceptDAExit (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1877:35)
+    at E.S (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1767:14705)
+    at E.Q (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1767:14471)
+    at E.M (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1767:13504)
+    at E.L (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1767:12560)
+    at d.value (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1767:11034)
+    at l.B (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:100:732)
+    at l.fire (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:100:949)
+    at n.fire (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:631:14809)
+    at K.onmessage (vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1783:8206)

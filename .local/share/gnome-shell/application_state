@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.FileRoller.desktop" score="0" last-seen="1726673798"/>
+    <application id="com.zorin.exec-guard.linux.desktop" score="0" last-seen="1726670191"/>
+    <application id="zorin-appearance.desktop" score="3130" last-seen="1726563143"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="2" last-seen="1726539936"/>
+    <application id="org.gnome.Software.desktop" score="130" last-seen="1726673755"/>
+    <application id="org.gnome.clocks.desktop" score="5" last-seen="1726540864"/>
+    <application id="gnome-control-center.desktop" score="48" last-seen="1726540914"/>
+    <application id="org.gnome.eog.desktop" score="6" last-seen="1726541074"/>
+    <application id="org.gnome.Photos.desktop" score="5" last-seen="1726668304"/>
+    <application id="org.gnome.Nautilus.desktop" score="9" last-seen="1726673862"/>
+    <application id="update-manager.desktop" score="8" last-seen="1726673913"/>
+    <application id="org.gnome.Weather.desktop" score="6" last-seen="1726563177"/>
+    <application id="org.gnome.Tour.desktop" score="18" last-seen="1726540456"/>
+    <application id="com.visualstudio.code.desktop" score="330" last-seen="1726713257"/>
+    <application id="firefox.desktop" score="965" last-seen="1726713229"/>
+    <application id="org.gnome.Terminal.desktop" score="29" last-seen="1726712594"/>
+    <application id="zorin-connect.desktop" score="2" last-seen="1726540203"/>
+    <application id="org.gnome.DiskUtility.desktop" score="17" last-seen="1726673892"/>
+    <application id="org.gnome.Shell.Extensions.ZorinConnect.Preferences.desktop" score="16" last-seen="1726540357"/>
+  </context>
+</application-state>
